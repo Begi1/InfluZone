@@ -9,6 +9,7 @@ import { HomePageHeaderComponent } from './components/home-page-header/home-page
 import { HomeComponent } from './pages/home/home.component';
 import { UserHeaderComponent } from './components/user-header/user-header.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

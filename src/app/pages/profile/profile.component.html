@@ -1,9 +1,35 @@
-<app-user-header></app-user-header>
-<div class="cont">
-    <div class="profile">
-        <div class="profile__backHome__button" routerLink="/profile">
-            <img src="../../../assets/arrow_left_alt.png" alt="">
-            <h1 class="profile__backHome__button__text">Home Page</h1>
-        </div>
+<!-- <div *ngIf="!isLoggedIn">
+    <button (click)="signIn()">Sign In with Google</button>
+  </div>
+  
+  <div *ngIf="isLoggedIn">
+    <button (click)="signOut()">Sign Out</button>
+    <div *ngIf="userChannelData">
+      <h2>{{ userChannelData.snippet.title }}</h2>
+      <p>Subscribers: {{ userChannelData.statistics.subscriberCount }}</p>
+      <p>Views: {{ userChannelData.statistics.viewCount }}</p>
     </div>
-</div>
+  </div> -->
+  
+  <!-- login.component.html -->
+<div class="login-container">
+    <h1>Sign up with TikTok</h1>
+    
+    <!-- If user is not authenticated -->
+    <button (click)="signUpWithTikTok()">Sign up with TikTok</button>
+  
+    <!-- If user info is available -->
+    <div *ngIf="userInfo">
+      <h2>Welcome, {{ userInfo.data.nickname }}</h2>
+      <img [src]="userInfo.data.avatar_url" alt="Profile Picture">
+      <p><strong>Followers:</strong> {{ userInfo.data.followers_count }}</p>
+      <p><strong>Following:</strong> {{ userInfo.data.following_count }}</p>
+      <p><strong>Likes:</strong> {{ userInfo.data.likes_count }}</p>
+    </div>
+  
+    <!-- If there is an error -->
+    <div *ngIf="error" class="error">
+      <p>{{ error }}</p>
+    </div>
+  </div>
+  
