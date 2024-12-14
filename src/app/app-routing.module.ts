@@ -6,6 +6,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { CustomersCategoryPageComponent } from './pages/customers-category-page/customers-category-page.component';
 import { InfluencersCategoryPageComponent } from './pages/influencers-category-page/influencers-category-page.component';
+import { InfluencersPageComponent } from './pages/influencers-page/influencers-page.component';
+import { CustomersPageComponent } from './pages/customers-page/customers-page.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'signin', component: SigninComponent},
   {path: 'customers-category-page', component: CustomersCategoryPageComponent},
   {path: 'influencers-category-page', component: InfluencersCategoryPageComponent},
+  {path: 'influencers-page', component: InfluencersPageComponent},
+  {path: 'customers-page', component: CustomersPageComponent},
 ];
 
 @NgModule({

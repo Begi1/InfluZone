@@ -1,8 +1,8 @@
 <div class="cont">
     <div class="customers">
-        <div class="customers__header">
+        <div *ngIf="isHeaderVisible" class="customers__header">
             <h1 class="customers__header__title">{{title}}</h1>
-            <div class="customers__header__seeAll">
+            <div class="customers__header__seeAll" [routerLink]="route">
                 <h2 class="customers__headerr__seeAll__text">See all</h2>
                 <img class="customers__headerr__seeAll__icon" src="../../../assets/keyboard_return.png" alt="icon">
             </div>

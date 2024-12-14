@@ -17,6 +17,9 @@ import { UserCardComponent } from './components/user-card/user-card.component';
 import { FormsModule } from '@angular/forms';
 import { CustomersCategoryPageComponent } from './pages/customers-category-page/customers-category-page.component';
 import { InfluencersCategoryPageComponent } from './pages/influencers-category-page/influencers-category-page.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { InfluencersPageComponent } from './pages/influencers-page/influencers-page.component';
+import { CustomersPageComponent } from './pages/customers-page/customers-page.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { InfluencersCategoryPageComponent } from './pages/influencers-category-p
     UserCardComponent,
     CustomersCategoryPageComponent,
     InfluencersCategoryPageComponent,
+    FooterComponent,
+    InfluencersPageComponent,
+    CustomersPageComponent,
   ],
   imports: [
     BrowserModule,

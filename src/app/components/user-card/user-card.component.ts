@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./user-card.component.scss']
 })
 export class UserCardComponent {
-  @Input() title = '';
+  @Input() title:string = '';
+  @Input() isHeaderVisible: boolean = true; 
+  @Input() route:string = ''
 }

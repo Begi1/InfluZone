@@ -27,12 +27,12 @@ export class PartnersComponent implements AfterViewInit {
   private initSplide(): void {
     new Splide('.splide', {
       type       : 'loop',
-      perPage    : 4,
+      perPage    : 9,
       perMove    : 1,
       pagination : false,
       arrows     : false,
       autoplay   : true,
-      interval   : 500,
+      interval   : 1000,
     }).mount();
   }
 }
