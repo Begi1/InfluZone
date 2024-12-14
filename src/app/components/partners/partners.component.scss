@@ -1,0 +1,34 @@
+.cont {
+  margin-top: 20px;
+}
+  
+  .splide {
+    margin-top: 20px;
+    width: 1200px;
+    height: 600px; // Full width
+    overflow: hidden;
+
+    .splide__title {
+      margin-bottom: 35px;
+      color: #000;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
+    }
+  }
+  
+  .splide__slide {
+    text-align: center; // Center content
+    margin-left: 50px;
+    img {
+      width: 170px; // Ensure images fit their containers
+      height: 170px; // Maintain aspect ratio
+    }
+  }
+  
+  .splide__list {
+    display: flex; // Important for the sliding effect
+  }
+  

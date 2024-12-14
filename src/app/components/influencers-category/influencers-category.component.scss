@@ -1,0 +1,108 @@
+.influencers {
+    margin-top: 20px;
+    width: 1200px;
+    height: 100%;
+
+    .influencers__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .influencers__header__title {
+            color: #000;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.2px;
+        }
+        .influencers__header__seeAll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            .influencers__headerr__seeAll__text {
+                color: #118279;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.75px;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: none;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+            }
+
+            .influencers__headerr__seeAll__icon {
+                width: 30px;
+                height: 20px;
+            }
+        }
+    }
+
+    .influencers__cards {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+        .influencers__card {
+            width: 370px;
+            height: 250px;
+            border-radius: 10px;
+            background: #F35151;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            .influencers__card__icon {
+
+            }
+
+            .influencers__card__title {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                color: #FFF;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.2px;
+            }
+
+            .influencers__cards__users {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .influencers__cards__users__icon {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                .influencers__cards__users__count {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: 0.8px;
+                    text-decoration-line: underline;
+                    text-decoration-style: solid;
+                    text-decoration-skip-ink: none;
+                    text-decoration-thickness: auto;
+                    text-underline-offset: auto;
+                    text-underline-position: from-font;
+                }
+            }
+        }
+    }
+}

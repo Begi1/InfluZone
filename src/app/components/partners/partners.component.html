@@ -1,0 +1,13 @@
+<div class="cont">
+  <div class="splide">
+    <h1 class="splide__title">Our partners</h1>
+    <div class="splide__track">
+      <div class="splide__list">
+        <div class="splide__slide" *ngFor="let slide of slides">
+          <img [src]="slide.image" alt="{{ slide.name }}" />
+          <h2>{{ slide.name }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

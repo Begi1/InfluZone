@@ -10,6 +10,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { UserHeaderComponent } from './components/user-header/user-header.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PartnersComponent } from './components/partners/partners.component';
+import { CustomersCategoryComponent } from './components/customers-category/customers-category.component';
+import { InfluencersCategoryComponent } from './components/influencers-category/influencers-category.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
+import { FormsModule } from '@angular/forms';
+import { CustomersCategoryPageComponent } from './pages/customers-category-page/customers-category-page.component';
+import { InfluencersCategoryPageComponent } from './pages/influencers-category-page/influencers-category-page.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +26,19 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageHeaderComponent,
     HomeComponent,
     UserHeaderComponent,
-    ProfileComponent
+    ProfileComponent,
+    PartnersComponent,
+    CustomersCategoryComponent,
+    InfluencersCategoryComponent,
+    UserCardComponent,
+    CustomersCategoryPageComponent,
+    InfluencersCategoryPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
