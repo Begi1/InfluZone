@@ -1,0 +1,39 @@
+<app-home-page-header [showAuth]="false"></app-home-page-header>
+<div class="cont">
+    <div class="signin">
+      <!-- Signup Form -->
+      <div class="signin__card" *ngIf="currentCard === 'signup'">
+        <h1 class="signin__card__title">Create your account</h1>
+        <form>
+          <input class="signin__card__input" type="text" placeholder="Name of your company">
+          <input class="signin__card__input" type="text" placeholder="Email">
+          <input class="signin__card__input" type="password" placeholder="Password">
+          <input class="signin__card__input" type="password" placeholder="Confirm password">
+          <div class="signin__card__checkbox">
+            <input class="signin__card__checkbox__input" type="checkbox">
+            <p class="signin__card__checkbox__text">I agree to terms and conditions</p>
+          </div>
+          <button class="signin__card__signup__button" type="button" (click)="goToCard('verification')">Sign up</button>
+          <button class="signin__card__cancel__button" type="button" routerLink="/get-start">Cancel</button>
+        </form>
+      </div>
+    
+      <!-- Verification Card -->
+      <div class="signin__card signin__card1" *ngIf="currentCard === 'verification'">
+        <h1 class="signin__card__title">A verification code has been sent to your mail n***gmail.com</h1>
+        <form>
+          <input class="signin__card__input" type="text" placeholder="Enter verification code">
+          <button class="signin__card__signup__button" type="button" (click)="goToCard('success')">Verify and Sign up</button>
+          <button class="signin__card__cancel__button" type="button" (click)="goToCard('signup')">Cancel</button>
+        </form>
+      </div>
+    
+      <!-- Success Card -->
+      <div class="signin__card signin__card2" *ngIf="currentCard === 'success'">
+        <img class="signin__card__success" src="../../../assets/check.png" alt="check">
+        <h1 class="signin__card__title">Congratulations!!!<br/> You have successfully created your profile</h1>
+        <button class="signin__card__signup__button" type="button" routerLink="/profile">Next</button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,8 +1,27 @@
 <app-user-header></app-user-header>
 <div class="cont">
-    <div class="header">
-        <img class="header__icon" routerLink="" src="../../../assets/arrow_left_alt.png" alt="">
-        <h1 class="header__title" routerLink="">Customers</h1>
+    <div class="header" routerLink="/home">
+        <img class="header__icon" src="../../../assets/arrow_left_alt.png" alt="">
+        <h1 class="header__title">Customers</h1>
+    </div>
+
+    <div class="categories">
+        <div class="categories__category" routerLink="/app-customers-category-page">
+            <img src="../../../assets/Fitness.png" alt="">
+            <h1>Fitness</h1>
+        </div>
+        <div class="categories__category" routerLink="/app-customers-category-page">
+            <img src="../../../assets/Fitness.png" alt="">
+            <h1>Fitness</h1>
+        </div>
+        <div class="categories__category" routerLink="/app-customers-category-page">
+            <img src="../../../assets/Fitness.png" alt="">
+            <h1>Fitness</h1>
+        </div>
+        <div class="categories__category" routerLink="/app-customers-category-page">
+            <img src="../../../assets/Fitness.png" alt="">
+            <h1>Fitness</h1>
+        </div>
     </div>
 
     <div class="search">
@@ -13,5 +32,5 @@
         <button class="search__button">Submit</button>
     </div>
 </div>
-<app-user-card [title]="'Customers'" [isHeaderVisible]="false"></app-user-card>
+<app-user-card [title]="'Customers'" [isHeaderVisible]="false" [buttonRoute]="'/customer-page'"></app-user-card>
 <app-footer></app-footer>

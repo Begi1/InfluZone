@@ -1,0 +1,1513 @@
+@media only screen and (min-width: 1200px) {
+    .cont {
+        flex-direction: column;
+        overflow: hidden;
+    
+        .banner__back{
+            width: 100%;
+            height: 710px;
+            background-image: url('../../../assets/welcomeBack.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .banner {
+            margin-top: 210px;
+            width: 1200px;
+            height: 554px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+            .banner__title {
+                margin-bottom: 35px;
+                width: 593px;
+                color: #000;
+                text-align: center;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+    
+                span {
+                    color: #118279;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+            }
+    
+            .banner__text {
+                width: 593px;
+                color: #000;
+                text-align: center;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                letter-spacing: 0.6px;
+            }
+    
+            .banner__image {
+                height: 100%;
+    
+            }
+        }
+
+        .userReverce {
+            flex-direction: row-reverse;
+        }
+    
+        .user {
+            margin-top: 100px;
+            width: 1200px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+    
+            .user__card {
+                width: 350px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+    
+                .user__card__rate {
+                    padding: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 2px;
+                    width: 79px;
+                    height: 33px;
+                    border-radius: 0px 0px 10px 0px;
+                    background: #118279;
+                    
+                    .user__card__rate__image {
+                        width: 30px;
+                        height: 30px;
+                    }
+    
+                    .user__card__rate__text {
+                        color: #FFF;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.6px;
+                    }
+                }
+    
+                .user__card__title {
+                    margin-top: 13px;
+                    color: #000;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+    
+                .user__card__text{
+                    margin-top: 10px;
+                    width: 319px;
+                    color: #000;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+    
+                .user__card__text {
+                    color: #000;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+            }
+    
+            .user__text {
+                .user__text__title {
+                    color: #118279;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+    
+                .user__text__text {
+                    color: #000;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                }
+            }
+    
+        }
+    
+        .howItsWorks {
+            width: 100%;
+            height: 610px;
+            background-image: url('../../../assets/howItsWorksback.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .howItsWorks__title {
+                margin-left: -790px;
+                width: 400px;
+                margin-bottom: 50px;
+                margin-top: 150px;
+                color: #118279;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                background: #FFF;
+                text-align: center;
+            }
+            .howItsWorks__columns {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .howItsWorks__column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .howItsWorks__column__card {
+                        margin-top: 24px;
+                        padding: 20px;
+                        width: 320px;
+                        height: 218px;
+                        border-radius: 34px;
+                        background: #118279;
+        
+                        h1 {
+                            color: #FFF;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                        }
+        
+                        p {
+                            color: #FFF;
+                            font-size: 25px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: normal;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    .howItsWorks__column__card1 {
+                        width: 444px;
+                    }
+
+                    .howItsWorks__column__card2 {
+                        width: 361px;
+                    }
+                }
+            }
+    
+        }
+    
+        .why {
+            margin-top: 20px;
+            width: 1200px;
+            .why__first {
+                width: 1200px;
+                display: flex;
+                align-items: center;
+                gap: 67px;
+        
+                .why__first__left {
+                    position: relative;
+                    z-index: 3;
+                    background-color: #FFF;
+                    min-width: 728px;
+        
+                    .why__first__left__title {
+                        margin-top: 42px;
+                        color: #000;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.5px;
+                        span {
+                            color: #118279;
+                            font-size: 50px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+        
+                    .why__first__left__text {
+                        margin-top: 42px;
+                        color: #000;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+                }
+        
+                .why__first__right {
+                    position: relative;
+                    z-index: 2;
+                    // width: 600px;
+                    // overflow: hidden; /* Hide overflowing content to ensure smooth animation */
+                    
+                    .why__first__right__influencers__cards {
+                        display: flex;
+                        gap: 55px;
+                        margin-top: 35px;
+                        animation: slideRight 10s linear infinite; /* Apply animation */
+                    }
+        
+                    .why__first__right__influencers__card {
+                        width: 370px;
+                        height: 250px;
+                        border-radius: 10px;
+                        background: #F35151;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        cursor: pointer;
+        
+                        .why__first__right__influencers__card__title {
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 1.2px;
+                        }
+        
+                        .why__first__right__influencers__cards__users {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+        
+                            .why__first__right__influencers__cards__users__icon {
+                                width: 35px;
+                                height: 35px;
+                            }
+        
+                            .why__first__right__influencers__cards__users__count {
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                                letter-spacing: 0.8px;
+                                text-decoration-line: underline;
+                                text-decoration-style: solid;
+                                text-decoration-skip-ink: none;
+                                text-decoration-thickness: auto;
+                                text-underline-offset: auto;
+                                text-underline-position: from-font;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .why__second {
+                margin-top: 100px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 70px;
+                .why__second__left {
+                    width: 1140px;
+                    height: 566px;
+                    position: relative;
+                    z-index: 2;
+                    margin-left: -700px;
+                    .why__second__left__cards{
+                        margin-top: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 30px;
+                        animation: slideLeft 10s linear infinite;
+                        .why__second__left__card {
+                            padding: 15px;
+                            width: 350px;
+                            height: 526px;
+                            border-radius: 0px 0px 10px 10px;
+                            background: #FFF;
+                            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                            cursor: pointer;
+    
+                            .why__second__left__card__title {
+                                margin-top: 10px;
+                                color: #118279;
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.9px;
+                            }
+    
+                            .why__second__left__card__text {
+                                margin-top: 20px;
+                                color: #0C0C0C;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 200;
+                                line-height: normal;
+                                letter-spacing: 1px;
+                            }
+    
+                            .why__second__left__card__price {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 20px;
+                                width: 100%;
+                                height: 47px;
+                                border-radius: 10px;
+                                background: #118279;
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.6px;
+                            }
+                            .why__second__left__card__features {
+                                width: 100%;
+                                text-align: left;
+                                margin-top: 20px;
+                                color: #0C0C0C;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.6px;
+                            }
+                            .why__second__left__card__list {
+                                width: 100%;
+                                // margin-top: 20px;
+                                .why__second__left__card__list__item {
+                                    // margin-top: 20px;
+                                    display: flex;
+                                    justify-content: space-between;
+            
+                                    .why__second__left__list__item__card__title {
+                                        margin-top: 16px;
+                                        color: #000;
+                                        text-align: justify;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 200;
+                                        line-height: normal;
+                                        letter-spacing: 0.54px;
+                                    }
+    
+                                    img {
+                                        margin-top: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .why__second {
+                    padding: 30px;
+                    width: 728px;
+                    height: 100%;
+                    background: #FFF;
+                    position: relative;
+                    z-index: 3;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    p {
+                        width: 100%;
+                        color: #000;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+                }
+            }
+        }
+    
+        
+    }
+
+    
+    @keyframes slideRight {
+        0% {
+            margin-left: 0;
+            // transform: translateX(0);
+        }
+
+        50% {
+            margin-left: -470px;
+        }
+
+        100% {
+            // transform: translateX(-65%); /* Move the cards off-screen to the left */
+            margin-left: 0;
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            margin-right: 0;
+            // transform: translateX(0);
+        }
+
+        50% {
+            margin-right: -750px;
+        }
+
+        100% {
+            // transform: translateX(-65%); /* Move the cards off-screen to the left */
+            margin-right: 0;
+        }
+    }
+}
+
+// @media only screen and (max-width: 1200px) {
+//     .cont {
+//         flex-direction: column;
+//         overflow: hidden;
+    
+//         .banner__back{
+//             width: 100%;
+//             height: 710px;
+//             background-image: url('../../../assets/welcomeBack.png');
+//             background-repeat: no-repeat;
+//             background-size: cover;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+    
+//         .banner {
+//             margin-top: 210px;
+//             width: 580px;
+//             height: 454px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             background-color: #FFF;
+//             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+//             .banner__title {
+//                 margin-bottom: 35px;
+//                 width: 200px;
+//                 color: #000;
+//                 text-align: center;
+//                 font-size: 20px;
+//                 font-style: normal;
+//                 font-weight: 400;
+//                 line-height: normal;
+//                 letter-spacing: 1.2px;
+    
+//                 span {
+//                     color: #118279;
+//                     font-size: 24px;
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     line-height: normal;
+//                     letter-spacing: 1.2px;
+//                 }
+//             }
+    
+//             .banner__text {
+//                 width: 200px;
+//                 color: #000;
+//                 text-align: center;
+//                 font-size: 14px;
+//                 font-style: normal;
+//                 font-weight: 200;
+//                 line-height: normal;
+//                 letter-spacing: 0.6px;
+//             }
+    
+//             .banner__image {
+//                 width: 150px;
+//                 height: 100%;
+//             }
+//         }
+
+//         .userReverce {
+//             flex-direction: row-reverse;
+//         }
+    
+//         .user {
+//             margin-top: 60px;
+//             width: 580px;
+//             height: 400px;
+//             display: flex;
+//             align-items: center;
+
+//             .user__card {
+//                 width: 350px;
+//                 height: 300px;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
+//                 position: relative;
+    
+//                 .user__card__rate {
+//                     padding: 10px;
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: space-around;
+//                     gap: 2px;
+//                     width: 79px;
+//                     height: 33px;
+//                     border-radius: 0px 0px 10px 0px;
+//                     background: #118279;
+                    
+//                     .user__card__rate__image {
+//                         width: 30px;
+//                         height: 30px;
+//                     }
+    
+//                     .user__card__rate__text {
+//                         color: #FFF;
+//                         font-size: 22px;
+//                         font-style: normal;
+//                         font-weight: 500;
+//                         line-height: normal;
+//                         letter-spacing: 0.6px;
+//                     }
+//                 }
+    
+//                 .user__card__title {
+//                     margin-top: 13px;
+//                     color: #000;
+//                     font-size: 14px;
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     line-height: normal;
+//                     letter-spacing: 0.9px;
+//                 }
+    
+//                 .user__card__text{
+//                     margin-top: 10px;
+//                     width: 319px;
+//                     color: #000;
+//                     text-align: center;
+//                     font-size: 12px;
+//                     font-style: normal;
+//                     font-weight: 200;
+//                     line-height: normal;
+//                     letter-spacing: 0.6px;
+//                 }
+    
+//                 .user__card__text {
+//                     color: #000;
+//                     text-align: center;
+//                     font-size: 12px;
+//                     font-style: normal;
+//                     font-weight: 200;
+//                     line-height: normal;
+//                     letter-spacing: 0.6px;
+//                 }
+//             }
+    
+//             .user__text {
+//                 .user__text__title {
+//                     color: #118279;
+//                     font-size: 14px;
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     line-height: normal;
+//                     letter-spacing: 0.9px;
+//                 }
+    
+//                 .user__text__text {
+//                     color: #000;
+//                     font-size: 12px;
+//                     font-style: normal;
+//                     font-weight: 200;
+//                     line-height: normal;
+//                     letter-spacing: 1px;
+//                 }
+//             }
+    
+//         }
+    
+//         .howItsWorks {
+//             padding-bottom: 20px;
+//             width: 100%;
+//             height: auto;
+//             background-image: url('../../../assets/howItsWorksback.png');
+//             background-repeat: no-repeat;
+//             background-size: cover;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             .howItsWorks__title {
+//                 width: 400px;
+//                 margin-bottom: 50px;
+//                 margin-top: 150px;
+//                 color: #118279;
+//                 font-size: 50px;
+//                 font-style: normal;
+//                 font-weight: 400;
+//                 line-height: normal;
+//                 letter-spacing: 1.5px;
+//                 background: #FFF;
+//                 text-align: center;
+//             }
+//             .howItsWorks__columns {
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 align-items: center;
+//                 gap: 30px;
+//                 .howItsWorks__column {
+//                     display: flex;
+//                     flex-direction: column;
+//                     justify-content: center;
+//                     align-items: center;
+//                     .howItsWorks__column__card {
+//                         padding: 20px;
+//                         width: 320px;
+//                         height: auto;
+//                         border-radius: 34px;
+//                         background: #118279;
+        
+//                         h1 {
+//                             color: #FFF;
+//                             font-size: 30px;
+//                             font-style: normal;
+//                             font-weight: 400;
+//                             line-height: normal;
+//                             letter-spacing: 0.9px;
+//                         }
+        
+//                         p {
+//                             color: #FFF;
+//                             font-size: 25px;
+//                             font-style: normal;
+//                             font-weight: 200;
+//                             line-height: normal;
+//                             letter-spacing: 1px;
+//                         }
+//                     }
+//                 }
+//             }
+    
+//         }
+    
+//         .why {
+//             margin-top: 20px;
+//             width: 300px;
+//             .why__first {
+//                 width: 300px;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 gap: 67px;
+        
+//                 .why__first__left {
+//                     position: relative;
+//                     z-index: 3;
+//                     background-color: #FFF;
+//                     min-width: 300px;
+        
+//                     .why__first__left__title {
+//                         margin-top: 42px;
+//                         color: #000;
+//                         font-size: 32px;
+//                         font-style: normal;
+//                         font-weight: 400;
+//                         line-height: normal;
+//                         letter-spacing: 1.5px;
+//                         span {
+//                             color: #118279;
+//                             font-size: 32px;
+//                             font-style: normal;
+//                             font-weight: 400;
+//                             line-height: normal;
+//                             letter-spacing: 1.5px;
+//                         }
+//                     }
+        
+//                     .why__first__left__text {
+//                         margin-top: 42px;
+//                         color: #000;
+//                         font-size: 14px;
+//                         font-style: normal;
+//                         font-weight: 200;
+//                         line-height: normal;
+//                         letter-spacing: 1.2px;
+//                     }
+//                 }
+        
+//                 .why__first__right {
+//                     position: relative;
+//                     z-index: 2;
+//                     // width: 600px;
+//                     // overflow: hidden; /* Hide overflowing content to ensure smooth animation */
+                    
+//                     .why__first__right__influencers__cards {
+//                         display: flex;
+//                         gap: 55px;
+//                         margin-top: 35px;
+//                         animation: slideRight 8s linear infinite; /* Apply animation */
+//                     }
+        
+//                     .why__first__right__influencers__card {
+//                         width: 370px;
+//                         height: 250px;
+//                         border-radius: 10px;
+//                         background: #F35151;
+//                         display: flex;
+//                         flex-direction: column;
+//                         align-items: center;
+//                         cursor: pointer;
+        
+//                         .why__first__right__influencers__card__title {
+//                             margin-top: 15px;
+//                             margin-bottom: 15px;
+//                             color: #FFF;
+//                             text-align: center;
+//                             font-size: 30px;
+//                             font-style: normal;
+//                             font-weight: 500;
+//                             line-height: normal;
+//                             letter-spacing: 1.2px;
+//                         }
+        
+//                         .why__first__right__influencers__cards__users {
+//                             display: flex;
+//                             align-items: center;
+//                             gap: 4px;
+        
+//                             .why__first__right__influencers__cards__users__icon {
+//                                 width: 35px;
+//                                 height: 35px;
+//                             }
+        
+//                             .why__first__right__influencers__cards__users__count {
+//                                 color: #FFF;
+//                                 text-align: center;
+//                                 font-size: 20px;
+//                                 font-style: normal;
+//                                 font-weight: 300;
+//                                 line-height: normal;
+//                                 letter-spacing: 0.8px;
+//                                 text-decoration-line: underline;
+//                                 text-decoration-style: solid;
+//                                 text-decoration-skip-ink: none;
+//                                 text-decoration-thickness: auto;
+//                                 text-underline-offset: auto;
+//                                 text-underline-position: from-font;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+    
+//             .why__second {
+//                 margin-top: 100px;
+//                 margin-bottom: 30px;
+//                 display: flex;
+//                 flex-direction: column-reverse;
+                
+//                 justify-content: center;
+//                 align-items: center;
+//                 gap: 70px;
+//                 .why__second__left {
+//                     width: 1140px;
+//                     height: 566px;
+//                     position: relative;
+//                     z-index: 2;
+//                     // margin-left: -700px;
+//                     .why__second__left__cards{
+//                         margin-top: 50px;
+//                         display: flex;
+//                         align-items: center;
+//                         justify-content: center;
+//                         gap: 30px;
+//                         animation: slideLeft 10s linear infinite;
+//                         .why__second__left__card {
+//                             padding: 15px;
+//                             width: 350px;
+//                             height: 526px;
+//                             border-radius: 0px 0px 10px 10px;
+//                             background: #FFF;
+//                             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+//                             cursor: pointer;
+    
+//                             .why__second__left__card__title {
+//                                 margin-top: 10px;
+//                                 color: #118279;
+//                                 font-size: 30px;
+//                                 font-style: normal;
+//                                 font-weight: 400;
+//                                 line-height: normal;
+//                                 letter-spacing: 0.9px;
+//                             }
+    
+//                             .why__second__left__card__text {
+//                                 margin-top: 20px;
+//                                 color: #0C0C0C;
+//                                 font-size: 22px;
+//                                 font-style: normal;
+//                                 font-weight: 200;
+//                                 line-height: normal;
+//                                 letter-spacing: 1px;
+//                             }
+    
+//                             .why__second__left__card__price {
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center;
+//                                 margin-top: 20px;
+//                                 width: 100%;
+//                                 height: 47px;
+//                                 border-radius: 10px;
+//                                 background: #118279;
+//                                 color: #FFF;
+//                                 text-align: center;
+//                                 font-size: 20px;
+//                                 font-style: normal;
+//                                 font-weight: 500;
+//                                 line-height: normal;
+//                                 letter-spacing: 0.6px;
+//                             }
+//                             .why__second__left__card__features {
+//                                 width: 100%;
+//                                 text-align: left;
+//                                 margin-top: 20px;
+//                                 color: #0C0C0C;
+//                                 font-size: 20px;
+//                                 font-style: normal;
+//                                 font-weight: 500;
+//                                 line-height: normal;
+//                                 letter-spacing: 0.6px;
+//                             }
+//                             .why__second__left__card__list {
+//                                 width: 100%;
+//                                 // margin-top: 20px;
+//                                 .why__second__left__card__list__item {
+//                                     // margin-top: 20px;
+//                                     display: flex;
+//                                     justify-content: space-between;
+            
+//                                     .why__second__left__list__item__card__title {
+//                                         margin-top: 16px;
+//                                         color: #000;
+//                                         text-align: justify;
+//                                         font-size: 18px;
+//                                         font-style: normal;
+//                                         font-weight: 200;
+//                                         line-height: normal;
+//                                         letter-spacing: 0.54px;
+//                                     }
+    
+//                                     img {
+//                                         margin-top: 16px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+    
+//                 .why__second {
+//                     min-width: 300px;
+//                     height: 100%;
+//                     background: #FFF;
+//                     position: relative;
+//                     z-index: 3;
+//                     display: flex;
+//                     flex-direction: column;
+//                     p {
+//                         width: 100%;
+//                         color: #000;
+//                         font-size: 18px;
+//                         font-style: normal;
+//                         font-weight: 200;
+//                         line-height: normal;
+//                         letter-spacing: 1.2px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media only screen and (max-width: 600px) {
+    .cont {
+        flex-direction: column;
+        overflow: hidden;
+    
+        .banner__back{
+            width: 100%;
+            height: 710px;
+            background-image: url('../../../assets/welcomeBack.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .banner {
+            margin-top: 210px;
+            width: 300px;
+            height: 454px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+            .banner__title {
+                margin-bottom: 35px;
+                // width: 593px;
+                color: #000;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+    
+                span {
+                    color: #118279;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+            }
+    
+            .banner__text {
+                // width: 593px;
+                color: #000;
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                letter-spacing: 0.6px;
+            }
+    
+            .banner__image {
+                height: 100%;
+                display: none;
+            }
+        }
+
+        .user {
+            margin-bottom: 100px;
+            margin-top: 100px;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+    
+            .user__card {
+                width: 350px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+    
+                .user__card__rate {
+                    padding: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 2px;
+                    width: 79px;
+                    height: 33px;
+                    border-radius: 0px 0px 10px 0px;
+                    background: #118279;
+                    
+                    .user__card__rate__image {
+                        width: 30px;
+                        height: 30px;
+                    }
+    
+                    .user__card__rate__text {
+                        color: #FFF;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.6px;
+                    }
+                }
+    
+                .user__card__title {
+                    margin-top: 13px;
+                    color: #000;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+    
+                .user__card__text{
+                    margin-top: 10px;
+                    width: 319px;
+                    color: #000;
+                    text-align: center;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+    
+                .user__card__text {
+                    color: #000;
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+            }
+    
+            .user__text {
+                .user__text__title {
+                    color: #118279;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+    
+                .user__text__text {
+                    color: #000;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        .howItsWorks {
+            width: 100%;
+            height: 1300px;
+            background-image: url('../../../assets/howItsWorksback.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .howItsWorks__title {
+                width: 400px;
+                margin-bottom: 50px;
+                margin-top: 150px;
+                color: #118279;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                background: #FFF;
+                text-align: center;
+            }
+            .howItsWorks__columns {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .howItsWorks__column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        margin-bottom: 20px;
+                    }
+
+                    .howItsWorks__column__card {
+                        padding: 20px;
+                        width: 320px;
+                        height: 218px;
+                        border-radius: 34px;
+                        background: #118279;
+        
+                        h1 {
+                            color: #FFF;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                        }
+        
+                        p {
+                            margin-top: 14px;
+                            color: #FFF;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: normal;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    .howItsWorks__column__card0 {
+                        width: 300px;
+                        height: 160px;
+                    }
+
+                    .howItsWorks__column__card1 {
+                        width: 300px;
+                    }
+
+                    .howItsWorks__column__card2 {
+                        width: 300px;
+                        height: 180px;
+                    }
+                }
+            }
+    
+        }
+
+        .why {
+            margin-top: 20px;
+            width: 300px;
+            .why__first {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 67px;
+        
+                .why__first__left {
+                    position: relative;
+                    z-index: 3;
+                    background-color: #FFF;
+                    min-width: 300px;
+        
+                    .why__first__left__title {
+                        margin-top: 42px;
+                        color: #000;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.5px;
+                        span {
+                            color: #118279;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+        
+                    .why__first__left__text {
+                        margin-top: 42px;
+                        color: #000;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+                }
+        
+                .why__first__right {
+                    position: relative;
+                    z-index: 2;
+                    // width: 600px;
+                    // overflow: hidden; /* Hide overflowing content to ensure smooth animation */
+                    
+                    .why__first__right__influencers__cards {
+                        display: flex;
+                        gap: 55px;
+                        margin-top: 35px;
+                        animation: slideRight 8s linear infinite; /* Apply animation */
+                    }
+        
+                    .why__first__right__influencers__card {
+                        width: 370px;
+                        height: 250px;
+                        border-radius: 10px;
+                        background: #F35151;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        cursor: pointer;
+        
+                        .why__first__right__influencers__card__title {
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 1.2px;
+                        }
+        
+                        .why__first__right__influencers__cards__users {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+        
+                            .why__first__right__influencers__cards__users__icon {
+                                width: 35px;
+                                height: 35px;
+                            }
+        
+                            .why__first__right__influencers__cards__users__count {
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                                letter-spacing: 0.8px;
+                                text-decoration-line: underline;
+                                text-decoration-style: solid;
+                                text-decoration-skip-ink: none;
+                                text-decoration-thickness: auto;
+                                text-underline-offset: auto;
+                                text-underline-position: from-font;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .why__second {
+                margin-top: 100px;
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column-reverse;
+                
+                justify-content: center;
+                align-items: center;
+                gap: 70px;
+                .why__second__left {
+                    width: 1140px;
+                    height: 566px;
+                    position: relative;
+                    z-index: 2;
+                    // margin-left: -700px;
+                    .why__second__left__cards{
+                        margin-top: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 30px;
+                        animation: slideLeft 10s linear infinite;
+                        .why__second__left__card {
+                            padding: 15px;
+                            width: 350px;
+                            height: 526px;
+                            border-radius: 0px 0px 10px 10px;
+                            background: #FFF;
+                            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                            cursor: pointer;
+    
+                            .why__second__left__card__title {
+                                margin-top: 10px;
+                                color: #118279;
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.9px;
+                            }
+    
+                            .why__second__left__card__text {
+                                margin-top: 20px;
+                                color: #0C0C0C;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 200;
+                                line-height: normal;
+                                letter-spacing: 1px;
+                            }
+    
+                            .why__second__left__card__price {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 20px;
+                                width: 100%;
+                                height: 47px;
+                                border-radius: 10px;
+                                background: #118279;
+                                color: #FFF;
+                                text-align: center;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.6px;
+                            }
+                            .why__second__left__card__features {
+                                width: 100%;
+                                text-align: left;
+                                margin-top: 20px;
+                                color: #0C0C0C;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.6px;
+                            }
+                            .why__second__left__card__list {
+                                width: 100%;
+                                // margin-top: 20px;
+                                .why__second__left__card__list__item {
+                                    // margin-top: 20px;
+                                    display: flex;
+                                    justify-content: space-between;
+            
+                                    .why__second__left__list__item__card__title {
+                                        margin-top: 16px;
+                                        color: #000;
+                                        text-align: justify;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 200;
+                                        line-height: normal;
+                                        letter-spacing: 0.54px;
+                                    }
+    
+                                    img {
+                                        margin-top: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .why__second {
+                    min-width: 300px;
+                    height: 100%;
+                    background: #FFF;
+                    position: relative;
+                    z-index: 3;
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        width: 100%;
+                        color: #000;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    
+    @keyframes slideRight {
+        0% {
+            margin-left: 1000px;
+            // transform: translateX(0);
+        }
+
+        50% {
+            margin-left: -1000px;
+        }
+
+        100% {
+            // transform: translateX(-65%); /* Move the cards off-screen to the left */
+            margin-left: 1000px;
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            margin-right: 0;
+            // transform: translateX(0);
+        }
+
+        50% {
+            margin-right: -750px;
+        }
+
+        100% {
+            // transform: translateX(-65%); /* Move the cards off-screen to the left */
+            margin-right: 0;
+        }
+    }
+}
+
+

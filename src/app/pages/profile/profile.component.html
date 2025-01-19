@@ -1,4 +1,4 @@
-<div *ngIf="!isLoggedIn">
+<!-- <div *ngIf="!isLoggedIn">
     <button (click)="signIn()">Sign In with Google</button>
   </div>
   
@@ -8,6 +8,37 @@
       <h2>{{ userChannelData.snippet.title }}</h2>
       <p>Subscribers: {{ userChannelData.statistics.subscriberCount }}</p>
       <p>Views: {{ userChannelData.statistics.viewCount }}</p>
+    </div>
+  </div> -->
+  <app-user-header></app-user-header>
+  <div class="cont">
+    <div class="profile">
+      <div class="profile__title">
+        <div class="profile__title__left" routerLink="/home">
+          <img  src="../../../assets/arrow_left_alt.png" alt="">
+          <h1 class="profile__title__text">Share your profile</h1>
+        </div>
+        <div class="profile__title__right">
+          <div class="profile__title__right__progress">
+            <h1>Almost there</h1>
+            <h2>75%</h2>
+          </div>
+          <div class="profile__title__right__greenline"></div>
+          <div class="profile__title__right__grayline"></div>
+        </div>
+      </div>
+      <div class="profile__inputs">
+        <h1 class="profile__inputs__title">Full name</h1>
+        <input class="profile__inputs__input" type="text" name="" id="">
+        <h1 class="profile__inputs__title">Date of birth</h1>
+        <input class="profile__inputs__date" type="date" name="" id="">
+        <h1 class="profile__inputs__title">About me</h1>
+        <textarea class="profile__inputs__textarea" name="" id=""></textarea>
+      </div>
+      <div class="profile__btns">
+        <button class="profile__btns__cancel" routerLink="/home">Cancel</button>
+        <button class="profile__btns__next" routerLink="/social">Next</button>
+      </div>
     </div>
   </div>
   <app-footer></app-footer>

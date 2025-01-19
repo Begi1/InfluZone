@@ -1,0 +1,39 @@
+<app-home-page-header></app-home-page-header>
+<app-customer-page-about></app-customer-page-about>
+<div class="cont">
+    <div class="influencers">
+        <div class="influencers__cards">
+            <div class="influencers__card">
+                <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
+                <h1 class="influencers__card__title">Youtube</h1>
+                <div class="influencers__cards__users">
+                    <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <h1 class="influencers__cards__users__count">1268</h1>
+                </div>
+            </div>
+            <div class="influencers__card" style="background: #212120;">
+                <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
+                <h1 class="influencers__card__title">Tik Tok</h1>
+                <div class="influencers__cards__users">
+                    <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <h1 class="influencers__cards__users__count">3358</h1>
+                </div>
+            </div>
+            <div class="influencers__card" style="background: #D142C0;">
+                <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
+                <h1 class="influencers__card__title">Instagram</h1>
+                <div class="influencers__cards__users">
+                    <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <h1 class="influencers__cards__users__count">6478</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        Here info about social
+    </div>
+</div>
+
+<app-customer-page-feedback></app-customer-page-feedback>
+<app-user-card [title]="'influencers'" [isHeaderVisible]="true" [buttonRoute]="'/influencers-page'"></app-user-card>
+<app-footer></app-footer>

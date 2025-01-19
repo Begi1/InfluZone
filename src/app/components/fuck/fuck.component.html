@@ -1,0 +1,17 @@
+<div class="cont">
+    <div class="fuck">
+        <h1 class="fuck__title">F.A.Q</h1>
+        <ul class="fuck__list">
+            <li *ngFor="let faq of faqs; let i = index">
+                <div (click)="toggleAnswer(i)">
+                    <h1>{{ faq.question }}</h1>
+                    <img *ngIf="!faq.isOpen" src="../../../assets/arrow_forward_ios.png" alt="">
+                    <img *ngIf="faq.isOpen" src="../../../assets/arrow_forward_ios_down.png" alt="">
+                </div>
+                <!-- Show the answer only if 'isOpen' is true for this FAQ -->
+                <p *ngIf="faq.isOpen">{{ faq.answer }}</p>
+            </li>
+            <button routerLink="/contact">Ask a question</button>
+        </ul>
+    </div>
+</div>

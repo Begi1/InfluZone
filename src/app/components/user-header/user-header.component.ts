@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './user-header.component.scss'
 })
 export class UserHeaderComponent {
+  isDropdownVisible: boolean = false;
 
+  toggleDropdown(): void {
+    this.isDropdownVisible = !this.isDropdownVisible;
+  }
 }

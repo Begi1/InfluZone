@@ -1,9 +1,9 @@
 <div class="cont">
     <div class="header">
-        <img routerLink="" src="../../../assets/logo.png" alt="logo">
-        <ul>
-            <li routerLink="/signup">sign up</li>
-            <li routerLink="/signin">sign in</li>
-        </ul>
+      <img routerLink="" src="../../../assets/logo.png" alt="logo">
+      <ul *ngIf="showAuth">
+        <li class="header__getstarted" routerLink="/get-start">Get started</li>
+      </ul>
     </div>
-</div>
+  </div>
+  

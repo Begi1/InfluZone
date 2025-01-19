@@ -1,12 +1,35 @@
 <div class="cont">
     <div class="header">
-        <img routerLink="" src="../../../assets/logo.png" alt="logo">
+        <img routerLink="/home" src="../../../assets/logo.png" alt="logo">
         <div class="header__icons">
-            <img class="header__icons__icon" src="../../../assets/roofing.png" alt="">
-            <img class="header__icons__icon" src="../../../assets/notifications.png" alt="">
-            <img class="header__icons__icon" src="../../../assets/work.png" alt="">
+            <img routerLink="/home" class="header__icons__icon" src="../../../assets/roofing.png" alt="">
+            <img routerLink="/notifications" class="header__icons__icon" src="../../../assets/notifications.png" alt="">
+            <div 
+                class="header__profileImage" 
+                (click)="toggleDropdown()">
+            </div>
         </div>
-        <div class="header__profileImage">
+        <div 
+            class="dropdown" 
+            *ngIf="isDropdownVisible">
+            <ul>
+                <li routerLink="/my-profile">
+                    <h1>My profile</h1>
+                    <img src="../../../assets/profile.svg" alt="">
+                </li>
+                <li>
+                    <h1 routerLink="/my-social">My Social</h1>
+                    <img src="../../../assets/social.svg" alt="">
+                </li>
+                <li routerLink="/f.a.q">
+                    <h1>F.A.Q</h1>
+                    <img src="../../../assets/faq.svg" alt="">
+                </li>
+                <li routerLink="">
+                    <h1>Sign out</h1>
+                    <img src="../../../assets/signout.svg" alt="">
+                </li>
+            </ul>
         </div>
     </div>
 </div>

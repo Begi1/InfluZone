@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class UserCardComponent {
   @Input() title:string = '';
   @Input() isHeaderVisible: boolean = true; 
-  @Input() route:string = ''
+  @Input() headerRoute:string = ''
+  @Input() buttonRoute:string = ''
 }

@@ -1,0 +1,566 @@
+@media only screen and (min-width: 1200px) { 
+    .cont {
+        margin-top: 20px;
+        flex-direction: column;
+    
+        .header {
+            margin-top: 40px;
+            width: 1200px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .header__icon {
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+    
+            .header__title {
+                color: #118279;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+                cursor: pointer;
+            }
+        }
+    
+        .influencers {
+            margin-top: 60px;
+            width: 1200px;
+            height: 100%;
+        
+            .influencers__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                .influencers__header__title {
+                    color: #000;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+                .influencers__header__seeAll {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+        
+                    .influencers__headerr__seeAll__text {
+                        color: #118279;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.75px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+        
+                    .influencers__headerr__seeAll__icon {
+                        width: 30px;
+                        height: 20px;
+                    }
+                }
+            }
+        
+            .influencers__cards {
+                width: 1200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 55px;
+                .influencers__card {
+                    width: 1200px;
+                    height: 358px;
+                    border-radius: 10px;
+                    background: #F35151;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 24px;
+                    cursor: pointer;
+        
+                    .influencers__card__icon {
+                        width: auto;
+                        height: 100%;
+                    }
+        
+                    .influencers__card__title {
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+        
+                    .influencers__card__users {
+                        margin-bottom: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 4px;
+                        .categories__card__users__icon {
+                            height: 46px;
+                            width: 46px;
+                        }
+            
+                        .categories__card__users__num{
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .search {
+            margin-top: 60px;
+            width: 1200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        
+            .search__input {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 60px;
+                border-radius: 10px;
+                border: 0.7px solid #118279;
+                background: #FFF;
+        
+                .search__input__icon {
+                    width: 53px;
+                    height: 53px;
+                }
+        
+                .search__input__input {
+                    padding-left: 5px;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    color: #ACACAC;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    outline: none;
+                }
+            }
+        
+            .search__button {
+                width: 170px;
+                height: 60px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #118279;
+                color: #FFF;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { 
+    .cont {
+        margin-top: 20px;
+        flex-direction: column;
+    
+        .header {
+            margin-top: 40px;
+            width: 600px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .header__icon {
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+    
+            .header__title {
+                color: #118279;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+                cursor: pointer;
+            }
+        }
+    
+        .influencers {
+            margin-top: 60px;
+            width: 600px;
+            height: 100%;
+        
+            .influencers__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                .influencers__header__title {
+                    color: #000;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+                .influencers__header__seeAll {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+        
+                    .influencers__headerr__seeAll__text {
+                        color: #118279;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.75px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+        
+                    .influencers__headerr__seeAll__icon {
+                        width: 30px;
+                        height: 20px;
+                    }
+                }
+            }
+        
+            .influencers__cards {
+                width: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 55px;
+                .influencers__card {
+                    width: 1200px;
+                    height: 358px;
+                    border-radius: 10px;
+                    background: #F35151;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 24px;
+                    cursor: pointer;
+        
+                    .influencers__card__icon {
+                        width: auto;
+                        height: 100%;
+                    }
+        
+                    .influencers__card__title {
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+        
+                    .influencers__card__users {
+                        margin-bottom: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 4px;
+                        .categories__card__users__icon {
+                            height: 46px;
+                            width: 46px;
+                        }
+            
+                        .categories__card__users__num{
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .search {
+            margin-top: 60px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        
+            .search__input {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 60px;
+                border-radius: 10px;
+                border: 0.7px solid #118279;
+                background: #FFF;
+        
+                .search__input__icon {
+                    width: 53px;
+                    height: 53px;
+                }
+        
+                .search__input__input {
+                    padding-left: 5px;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    color: #ACACAC;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    outline: none;
+                }
+            }
+        
+            .search__button {
+                width: 170px;
+                height: 60px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #118279;
+                color: #FFF;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .cont {
+        margin-top: 20px;
+        flex-direction: column;
+    
+        .header {
+            margin-top: 40px;
+            width: 300px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .header__icon {
+                width: 32px;
+                height: auto;
+                cursor: pointer;
+            }
+    
+            .header__title {
+                color: #118279;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+                cursor: pointer;
+            }
+        }
+    
+        .influencers {
+            margin-top: 40px;
+            width: 300px;
+            height: 100%;
+        
+            .influencers__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                .influencers__header__title {
+                    color: #000;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+                .influencers__header__seeAll {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+        
+                    .influencers__headerr__seeAll__text {
+                        color: #118279;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.75px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+        
+                    .influencers__headerr__seeAll__icon {
+                        width: 30px;
+                        height: 20px;
+                    }
+                }
+            }
+        
+            .influencers__cards {
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 55px;
+                .influencers__card {
+                    width: 300px;
+                    height: 280px;
+                    border-radius: 10px;
+                    background: #F35151;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 24px;
+                    cursor: pointer;
+        
+                    .influencers__card__icon {
+                        width: auto;
+                        height: 32;
+                    }
+        
+                    .influencers__card__title {
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+        
+                    .influencers__card__users {
+                        margin-bottom: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 4px;
+                        .categories__card__users__icon {
+                            height: 32px;
+                            width: auto;
+                        }
+            
+                        .categories__card__users__num{
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .search {
+            margin-top: 40px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        
+            .search__input {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                border: 0.7px solid #118279;
+                background: #FFF;
+        
+                .search__input__icon {
+                    width: 32px;
+                    height: auto;
+                }
+        
+                .search__input__input {
+                    padding-left: 5px;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    color: #ACACAC;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    outline: none;
+                }
+            }
+        
+            .search__button {
+                width: 80px;
+                height: 40px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #118279;
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

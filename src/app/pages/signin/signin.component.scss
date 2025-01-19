@@ -1,132 +1,425 @@
-.cont {
-    margin-top: 20px;
-}
-.signin {
-    margin-top: 20px;
-    height: 1139px;
-    width: 1440px;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    background-image: url('../../../assets/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    .signin__card {
-        padding: 53px;
-        margin-top: 90px;
-        width: 530px;
-        height: 600px;
-        background: #FFF;
-        display: flex;
-        flex-direction: column;
-
-
-        .signin__card__title {
-            margin-top: 60px;
-            color: #000;
-            text-align: center;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.9px;
-        }
-
-        .signin__card__input {
-            padding-left: 22px;
-            margin-top: 60px;
-            width: 424px;
-            height: 60px;
-            border-radius: 10px;
-            border: 0.2px solid #000;
-            background: #E6E6E6;
-            color: #ACACAC;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 200;
-            line-height: normal;
-        }
-
-        .signin__card__checkbox {
-            margin-top: 20px;
+@media only screen and (min-width: 1200px) { 
+    .cont {
+        margin-top: 20px;
+        .getStart {
+            height: 1139px;
+            width: 1440px;
+            background-image: url('../../../assets/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: flex-start;
-            gap: 10px;
-
-            .signin__card__checkbox__input {
-                width: 30px;
-                height: 30px;
-            }
+            .getStart__card {
+                width: 538px;
+                height: 910px;
+                background: #FFF;
+                text-align: center;
     
-            .signin__card__checkbox__text {
-                color: #353535;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 0.6px;
+                .getStart__card__img {
+                    margin-top: 20px;
+                }
+    
+                .getStart__card__title {
+                    margin-top: 30px;
+                    color: #FFF;
+                    font-size: 47px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.41px;
+                    background: #118279;
+                }
+    
+                .getStart__card__text {
+                    padding: 33px;
+                    margin-bottom: 30px;
+                    color: #000;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 1.28px;
+                }
+    
+                .getStart__card__sign {
+                    margin-left: 53px;
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+    
+                    .getStart__card__sign__input {
+                        padding: 22px;
+                        width: 424px;
+                        height: 60px;
+                        border-radius: 10px;
+                        border: 0.2px solid #000;
+                        background: #E6E6E6;
+                        color: #ACACAC;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        border: none;
+                    }
+    
+                    .getStart__card__sign__forgot {
+                        margin-bottom: 30px;
+                        margin-top: 7px;
+                        color: #118279;
+                        text-align: center;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.8px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                        cursor: pointer;
+                    }
+    
+                    .getStart__card__sign__btn {
+                        width: 424px;
+                        height: 58px;
+                        border-radius: 10px;
+                        background: #118279;
+                        box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                    
+                }
+    
+                .getStart__card__acount {
+                    margin-top: 30px;
+                    color: #000;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.8px;
+                }
+    
+                .getStart__card__signin {
+                    margin-top: 30px;
+                    width: 424px;
+                    height: 58px;
+                    border-radius: 10px;
+                    background: #118279;
+                    box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                    border: none;
+                    cursor: pointer;
+                }
             }
-        }
-
-        .signin__card__signup__button {
-            margin-top: 60px;
-            width: 424px;
-            height: 58px;
-            border-radius: 10px;
-            background: #118279;
-            color: #FFF;
-            text-align: center;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.9px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .signin__card__cancel__button {
-            margin-top: 20px;
-            width: 424px;
-            height: 58px;
-            border-radius: 10px;
-            background: #FFF;
-            color: #118279;
-            text-align: center;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.9px;
-            border: none;
-            cursor: pointer;
         }
     }
+}
 
-    .signin__back__button {
-        position: absolute;
-        left: 15px;
-        top: 60px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        
-        .signin__back__button__icon {
-            width: 50px;
-            height: 50px;
+@media only screen and (max-width: 1200px) { 
+    .cont {
+        margin-top: 20px;
+        .getStart {
+            height: 1139px;
+            width: 1440px;
+            background-image: url('../../../assets/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .getStart__card {
+                width: 538px;
+                height: 910px;
+                background: #FFF;
+                text-align: center;
+    
+                .getStart__card__img {
+                    margin-top: 20px;
+                }
+    
+                .getStart__card__title {
+                    margin-top: 30px;
+                    color: #FFF;
+                    font-size: 47px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.41px;
+                    background: #118279;
+                }
+    
+                .getStart__card__text {
+                    padding: 33px;
+                    margin-bottom: 30px;
+                    color: #000;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 1.28px;
+                }
+
+                .d-flex {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+                .getStart__card__sign {
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+    
+                    .getStart__card__sign__input {
+                        padding: 22px;
+                        width: 424px;
+                        height: 60px;
+                        border-radius: 10px;
+                        border: 0.2px solid #000;
+                        background: #E6E6E6;
+                        color: #ACACAC;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        border: none;
+                    }
+    
+                    .getStart__card__sign__forgot {
+                        margin-bottom: 30px;
+                        margin-top: 7px;
+                        color: #118279;
+                        text-align: center;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.8px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                        cursor: pointer;
+                    }
+    
+                    .getStart__card__sign__btn {
+                        width: 424px;
+                        height: 58px;
+                        border-radius: 10px;
+                        background: #118279;
+                        box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                    
+                }
+    
+                .getStart__card__acount {
+                    margin-top: 30px;
+                    color: #000;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.8px;
+                }
+    
+                .getStart__card__signin {
+                    margin-top: 30px;
+                    width: 424px;
+                    height: 58px;
+                    border-radius: 10px;
+                    background: #118279;
+                    box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
         }
+    }
+}
 
-        .signin__back__button__text {
-            color: #118279;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 1.2px;
+@media only screen and (max-width: 600px) {  
+    .cont {
+        margin-top: 20px;
+        .getStart {
+            height: auto;
+            width: 100%;
+            background-image: url('../../../assets/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .getStart__card {
+                margin-bottom: 60px;
+                padding-bottom: 40px;
+                width: 300px;
+                height: auto;
+                background: #FFF;
+                text-align: center;
+    
+                .getStart__card__img {
+                    margin-top: 20px;
+                }
+    
+                .getStart__card__title {
+                    margin-top: 30px;
+                    color: #FFF;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.41px;
+                    background: #118279;
+                }
+    
+                .getStart__card__text {
+                    padding: 15px;
+                    margin-bottom: 30px;
+                    color: #000;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 1.28px;
+                }
+
+                .d-flex {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+                .getStart__card__sign {
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+    
+                    .getStart__card__sign__input {
+                        padding: 22px;
+                        width: 260px;
+                        height: 40px;
+                        border-radius: 10px;
+                        border: 0.2px solid #000;
+                        background: #E6E6E6;
+                        color: #ACACAC;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: normal;
+                        border: none;
+                    }
+    
+                    .getStart__card__sign__forgot {
+                        margin-bottom: 30px;
+                        margin-top: 7px;
+                        color: #118279;
+                        text-align: start;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.8px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                        cursor: pointer;
+                    }
+    
+                    .getStart__card__sign__btn {
+                        width: 260px;
+                        height: 40px;
+                        border-radius: 10px;
+                        background: #118279;
+                        box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                    
+                }
+    
+                .getStart__card__acount {
+                    margin-top: 30px;
+                    color: #000;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.8px;
+                }
+    
+                .getStart__card__signin {
+                    margin-top: 30px;
+                    width: 260px;
+                    height: 40px;
+                    border-radius: 10px;
+                    background: #118279;
+                    box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

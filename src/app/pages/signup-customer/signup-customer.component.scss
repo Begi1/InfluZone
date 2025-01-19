@@ -1,0 +1,365 @@
+@media only screen and (min-width: 600px) {  
+    .cont {
+        margin-top: 20px;
+    }
+    .signin {
+        margin-top: 20px;
+        height: 1139px;
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        background-image: url('../../../assets/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+        .signin__card {
+            padding: 53px;
+            margin-top: 90px;
+            width: 530px;
+            height: 887px;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+    
+    
+            .signin__card__title {
+                margin-top: 7px;
+                color: #000;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+            }
+    
+            .signin__card__input {
+                padding-left: 22px;
+                margin-top: 60px;
+                width: 424px;
+                height: 60px;
+                border-radius: 10px;
+                border: 0.2px solid #000;
+                background: #E6E6E6;
+                color: #ACACAC;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+    
+            .signin__card__date {
+                padding-left: 22px;
+                margin-top: 40px;
+                width: 424px;
+                height: 60px;
+                border-radius: 10px;
+                border: 0.2px solid #000;
+                background: #E6E6E6;
+                color: #ACACAC;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+    
+            .signin__card__checkbox {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+    
+                .signin__card__checkbox__input {
+                    width: 30px;
+                    height: 30px;
+                }
+        
+                .signin__card__checkbox__text {
+                    color: #353535;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+            }
+    
+            .signin__card__signup__button {
+                margin-top: 60px;
+                width: 424px;
+                height: 58px;
+                border-radius: 10px;
+                background: #118279;
+                color: #FFF;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .signin__card__cancel__button {
+                margin-top: 20px;
+                width: 424px;
+                height: 58px;
+                border-radius: 10px;
+                background: #FFF;
+                color: #118279;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .signin__card__success {
+                width: 155px;
+                height: 155px;
+            }
+        }
+    
+        .signin__card1 {
+            width: 530px;
+            height: 559px;
+        }
+    
+        .signin__card2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 530px;
+            height: 576px;
+    
+            h1 {
+                width: 419px;
+                color: #000;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+            }
+        }
+    
+        .signin__back__button {
+            position: absolute;
+            left: 15px;
+            top: 60px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            
+            .signin__back__button__icon {
+                width: 50px;
+                height: 50px;
+            }
+    
+            .signin__back__button__text {
+                color: #118279;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+    .cont {
+        margin-top: 20px;
+    }
+    .signin {
+        margin-top: 20px;
+        height: 1139px;
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        background-image: url('../../../assets/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+        .signin__card {
+            margin-top: 90px;
+            width: 300px;
+            height: 640px;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+    
+            .signin__card__title {
+                margin-top: 33px;
+                color: #000;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+            }
+    
+            .signin__card__input {
+                margin-left: 10px;
+                padding: 13px;
+                margin-top: 40px;
+                width: 280px;
+                height: 40px;
+                border-radius: 10px;
+                border: 0.2px solid #000;
+                background: #E6E6E6;
+                color: #ACACAC;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+    
+            .signin__card__date {
+                padding-left: 22px;
+                margin-top: 40px;
+                width: 424px;
+                height: 60px;
+                border-radius: 10px;
+                border: 0.2px solid #000;
+                background: #E6E6E6;
+                color: #ACACAC;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+    
+            .signin__card__checkbox {
+                margin-left: 10px;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+    
+                .signin__card__checkbox__input {
+                    width: 19px;
+                    height: 19px;
+                }
+        
+                .signin__card__checkbox__text {
+                    color: #353535;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+            }
+    
+            .signin__card__signup__button {
+                margin-left: 10px;
+                margin-top: 60px;
+                width: 280px;
+                height: 40px;
+                border-radius: 10px;
+                background: #118279;
+                color: #FFF;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .signin__card__cancel__button {
+                margin-left: 10px;
+                margin-top: 20px;
+                width: 280px;
+                height: 40px;
+                border-radius: 10px;
+                background: #FFF;
+                color: #118279;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .signin__card__success {
+                width: 155px;
+                height: 155px;
+            }
+        }
+    
+        .signin__card1 {
+            width: 300px;
+            height: 440px;
+        }
+    
+        .signin__card2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 576px;
+    
+            h1 {
+                width: 280px;
+                color: #000;
+                text-align: center;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.9px;
+            }
+        }
+    
+        .signin__back__button {
+            position: absolute;
+            left: 15px;
+            top: 60px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            
+            .signin__back__button__icon {
+                width: 50px;
+                height: 50px;
+            }
+    
+            .signin__back__button__text {
+                color: #118279;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}
+

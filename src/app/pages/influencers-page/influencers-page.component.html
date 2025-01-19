@@ -1,8 +1,25 @@
 <app-user-header></app-user-header>
 <div class="cont">
-    <div class="header">
-        <img class="header__icon" routerLink="" src="../../../assets/arrow_left_alt.png" alt="">
-        <h1 class="header__title" routerLink="">Influencers</h1>
+    <div class="header" routerLink="/home">
+        <img class="header__icon" src="../../../assets/arrow_left_alt.png" alt="">
+        <h1 class="header__title">Influencers</h1>
+    </div>
+
+    <div class="influencers">
+        <div class="influencers__cards">
+            <div class="influencers__card" routerLink="/app-influencers-category-page">
+                <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
+                <h1 class="influencers__card__title">Youtube</h1>
+            </div>
+            <div class="influencers__card" style="background: #212120;" routerLink="/app-influencers-category-page">
+                <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
+                <h1 class="influencers__card__title">Tik Tok</h1>
+            </div>
+            <div class="influencers__card" style="background: #D142C0;" routerLink="/app-influencers-category-page">
+                <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
+                <h1 class="influencers__card__title">Instagram</h1>
+            </div>
+        </div>
     </div>
 
     <div class="search">
@@ -13,36 +30,6 @@
         <button class="search__button">Submit</button>
     </div>
 
-    <div class="cont">
-        <div class="influencers">
-            <div class="influencers__cards">
-                <div class="influencers__card">
-                    <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
-                    <h1 class="influencers__card__title">Youtube</h1>
-                    <div class="influencers__cards__users">
-                        <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                        <h1 class="influencers__cards__users__count">1268</h1>
-                    </div>
-                </div>
-                <div class="influencers__card" style="background: #212120;">
-                    <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
-                    <h1 class="influencers__card__title">Tik Tok</h1>
-                    <div class="influencers__cards__users">
-                        <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                        <h1 class="influencers__cards__users__count">3358</h1>
-                    </div>
-                </div>
-                <div class="influencers__card" style="background: #D142C0;">
-                    <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
-                    <h1 class="influencers__card__title">Instagram</h1>
-                    <div class="influencers__cards__users">
-                        <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                        <h1 class="influencers__cards__users__count">6478</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-<app-user-card [title]="'Customers'" [isHeaderVisible]="false"></app-user-card>
+<app-user-card [title]="'Customers'" [isHeaderVisible]="false" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'"></app-user-card>
 <app-footer></app-footer>

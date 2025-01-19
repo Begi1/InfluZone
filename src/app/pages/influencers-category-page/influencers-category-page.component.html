@@ -1,0 +1,30 @@
+<app-user-header></app-user-header>
+<div class="cont">
+    <div class="header" routerLink="/influencers-page">
+        <img class="header__icon" src="../../../assets/arrow_left_alt.png" alt="">
+        <h1 class="header__title">Influencers on Youtube</h1>
+    </div>
+
+    <div class="influencers">
+        <div class="influencers__cards">
+            <div class="influencers__card" routerLink="/app-influencers-category-page">
+                <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
+                <h1 class="influencers__card__title">Youtube</h1>
+                <div class="influencers__card__users">
+                    <img class="categories__card__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <p class="categories__card__users__num">1268</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="search__input">
+            <img class="search__input__icon" src="../../../assets/search.png" alt="">
+            <input class="search__input__input" type="text" placeholder="Search">
+        </div>
+        <button class="search__button">Submit</button>
+    </div>
+</div>
+<app-user-card [title]="'Customers'" [isHeaderVisible]="false" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'"></app-user-card>
+<app-footer></app-footer>

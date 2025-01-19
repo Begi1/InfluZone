@@ -1,0 +1,114 @@
+<app-user-header></app-user-header>
+<div class="cont">
+    <div class="profile__title">
+      <div class="profile__title__left" routerLink="/home">
+        <img  src="../../../assets/arrow_left_alt.png" alt="">
+        <h1 class="profile__title__text">Share your profile</h1>
+      </div>
+      <div class="profile__title__right">
+        <div class="profile__title__right__progress">
+          <h1>Almost there</h1>
+          <h2>95%</h2>
+        </div>
+        <div class="profile__title__right__greenline"></div>
+        <div class="profile__title__right__grayline"></div>
+      </div>
+    </div>
+    <div class="influencers">
+        <div class="influencers__cards">
+          <!-- First card -->
+          <div 
+            class="influencers__card" 
+            (click)="resizeCard(0)" 
+            [ngClass]="{'active': activeCard === 0}">
+            <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
+            <h1 class="influencers__card__title">Youtube</h1>
+          </div>
+      
+          <!-- Second card -->
+          <div 
+            class="influencers__card" 
+            (click)="resizeCard(1)" 
+            [ngClass]="{'active': activeCard === 1}" 
+            style="background: #212120;">
+            <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
+            <h1 class="influencers__card__title">Tik Tok</h1>
+          </div>
+      
+          <!-- Third card -->
+          <div 
+            class="influencers__card" 
+            (click)="resizeCard(2)" 
+            [ngClass]="{'active': activeCard === 2}" 
+            style="background: #D142C0;">
+            <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
+            <h1 class="influencers__card__title">Instagram</h1>
+          </div>
+        </div>
+      </div>
+      
+    
+    <div class="social__info">
+        <div>
+            <h1 class="social__info__title">Social media platforms</h1>
+            
+            <!-- Check if socialLinks is empty -->
+            <ul *ngIf="socialLinks.length > 0; else noLinks" class="social__info__links">
+                <li *ngFor="let link of socialLinks" class="social__info__links__link">
+                    <a [href]="link" target="_blank">{{ link }}</a>
+                </li>
+            </ul>
+              
+            <ng-template #noLinks>
+            <p>No social media links available.</p>
+            </ng-template>
+        
+            <p (click)="signIn()" class="social__info__add">+ Add more</p>
+        </div>        
+        <div class="social__content">
+            <h1 class="social__info__title">Content</h1>
+          
+            <!-- Dropdown for selecting an option -->
+            <select class="social__content__dropdown" [(ngModel)]="selectedItem" (change)="onSelect()">
+              <option *ngFor="let item of availableItems" [value]="item">{{ item }}</option>
+            </select>
+            
+            <!-- Unordered list to display selected items -->
+            <ul class="social__content__list">
+              <li *ngFor="let item of selectedItems" (click)="removeItem(item)">
+                {{ item }}
+              </li>
+            </ul>
+        </div>          
+        <div class="social__info__addingVideo">
+            <h1 class="social__info__title">Top 3 your videos</h1>
+            
+            <!-- Input and button for adding videos -->
+            <div class="social__info__addingVideo__add">
+              <input class="social__info__addingVideo__add__input" type="text" [(ngModel)]="newVideo" />
+              <button class="social__info__addingVideo__add__button" (click)="addVideo()">Add Video</button>
+            </div>
+            
+            <!-- List of videos -->
+            <ul class="social__info__addingVideo__list">
+              <li *ngFor="let video of videos; let i = index">
+                <a [href]="video" target="_blank">{{ video }}</a>
+                <button (click)="removeVideo(i)">Remove</button> <!-- Remove button -->
+              </li>
+            </ul>
+        </div>                 
+        <div class="social__info__services">
+            <div class="social__info__services__header">
+              <h1 class="social__info__services__header__title">Your services</h1>
+              <h2 class="social__info__services__header__add">+ Add</h2>
+            </div>
+            <p class="social__info__services__content">You don’t have any services</p>
+        </div>
+    </div>
+    <div class="btns">
+      <button class="btns__white" routerLink="/home">Cancel</button>
+      <button class="btns__green" routerLink="/home">Submit</button>
+    </div>
+
+</div>
+<app-footer></app-footer>

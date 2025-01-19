@@ -1,109 +1,343 @@
-.cont {
-    margin-top: 20px;
-}
-.customers {
-    margin-top: 20px;
-    width: 1200px;
-    height: 100%;
+@media only screen and (min-width: 1200px) { 
+    .cont {
+        margin-top: 20px;
 
-    .customers__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .customers__header__title {
-            color: #000;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 1.2px;
-        }
-        .customers__header__seeAll {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-
-            .customers__headerr__seeAll__text {
-                color: #118279;
-                font-size: 25px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.75px;
-                text-decoration-line: underline;
-                text-decoration-style: solid;
-                text-decoration-skip-ink: none;
-                text-decoration-thickness: auto;
-                text-underline-offset: auto;
-                text-underline-position: from-font;
+        .customers {
+            margin-top: 20px;
+            width: 1200px;
+            height: 100%;
+        
+            .customers__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                .customers__header__title {
+                    color: #000;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+                .customers__header__seeAll {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+        
+                    .customers__headerr__seeAll__text {
+                        color: #118279;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.75px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+        
+                    .customers__headerr__seeAll__icon {
+                        width: 30px;
+                        height: 20px;
+                    }
+                }
             }
-
-            .customers__headerr__seeAll__icon {
-                width: 30px;
-                height: 20px;
+        
+            .customers__cards {
+                margin-top: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 55px;
+                .customers__card {
+                    width: 260px;
+                    height: 250px;
+                    border-radius: 10px;
+                    background: #DC849C;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    cursor: pointer;
+        
+                    .customers__card__icon {
+        
+                    }
+        
+                    .customers__card__title {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+        
+                    .customers__cards__users {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+        
+                        .customers__cards__users__icon {
+                            width: 35px;
+                            height: 35px;
+                        }
+        
+                        .customers__cards__users__count {
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 0.8px;
+                            text-decoration-line: underline;
+                            text-decoration-style: solid;
+                            text-decoration-skip-ink: none;
+                            text-decoration-thickness: auto;
+                            text-underline-offset: auto;
+                            text-underline-position: from-font;
+                        }
+                    }
+                }
             }
         }
     }
+}
 
-    .customers__cards {
-        margin-top: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 55px;
-        .customers__card {
-            width: 260px;
-            height: 250px;
-            border-radius: 10px;
-            background: #DC849C;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
 
-            .customers__card__icon {
+@media only screen and (max-width: 1200px) { 
+    .cont {
+        margin-top: 20px;
 
-            }
-
-            .customers__card__title {
-                margin-top: 15px;
-                margin-bottom: 15px;
-                color: #FFF;
-                text-align: center;
-                font-size: 30px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 1.2px;
-            }
-
-            .customers__cards__users {
+        .customers {
+            margin-top: 20px;
+            width: 600px;
+            height: 100%;
+        
+            .customers__header {
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                gap: 4px;
-
-                .customers__cards__users__icon {
-                    width: 35px;
-                    height: 35px;
-                }
-
-                .customers__cards__users__count {
-                    color: #FFF;
-                    text-align: center;
-                    font-size: 20px;
+        
+                .customers__header__title {
+                    color: #000;
+                    font-size: 24px;
                     font-style: normal;
-                    font-weight: 300;
+                    font-weight: 400;
                     line-height: normal;
-                    letter-spacing: 0.8px;
-                    text-decoration-line: underline;
-                    text-decoration-style: solid;
-                    text-decoration-skip-ink: none;
-                    text-decoration-thickness: auto;
-                    text-underline-offset: auto;
-                    text-underline-position: from-font;
+                    letter-spacing: 1.2px;
+                }
+                .customers__header__seeAll {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+        
+                    .customers__headerr__seeAll__text {
+                        color: #118279;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.75px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+        
+                    .customers__headerr__seeAll__icon {
+                        width: 30px;
+                        height: 20px;
+                    }
+                }
+            }
+        
+            .customers__cards {
+                margin-top: 35px;
+                display: grid;
+                grid-template-columns: auto auto ;
+                gap: 60px;
+                .customers__card {
+                    width: 260px;
+                    height: 250px;
+                    border-radius: 10px;
+                    background: #DC849C;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    cursor: pointer;
+        
+                    .customers__card__icon {
+        
+                    }
+        
+                    .customers__card__title {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+        
+                    .customers__cards__users {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+        
+                        .customers__cards__users__icon {
+                            width: 35px;
+                            height: 35px;
+                        }
+        
+                        .customers__cards__users__count {
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 0.8px;
+                            text-decoration-line: underline;
+                            text-decoration-style: solid;
+                            text-decoration-skip-ink: none;
+                            text-decoration-thickness: auto;
+                            text-underline-offset: auto;
+                            text-underline-position: from-font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .cont {
+        margin-top: 20px;
+
+        .customers {
+            margin-top: 20px;
+            width: 300px;
+            height: 100%;
+        
+            .customers__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                .customers__header__title {
+                    color: #000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+                .customers__header__seeAll {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4px;
+                    cursor: pointer;
+        
+                    .customers__headerr__seeAll__text {
+                        color: #118279;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.75px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+        
+                    .customers__headerr__seeAll__icon {
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        
+            .customers__cards {
+                margin-top: 35px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                .customers__card {
+                    width: 140px;
+                    height: 135px;
+                    border-radius: 10px;
+                    background: #DC849C;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    cursor: pointer;
+        
+                    .customers__card__icon {
+                        height: 48px;
+                        width: auto;
+                    }
+        
+                    .customers__card__title {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                    }
+        
+                    .customers__cards__users {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+        
+                        .customers__cards__users__icon {
+                            width: 24px;
+                            height: 24px;
+                        }
+        
+                        .customers__cards__users__count {
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 0.8px;
+                            text-decoration-line: underline;
+                            text-decoration-style: solid;
+                            text-decoration-skip-ink: none;
+                            text-decoration-thickness: auto;
+                            text-underline-offset: auto;
+                            text-underline-position: from-font;
+                        }
+                    }
                 }
             }
         }

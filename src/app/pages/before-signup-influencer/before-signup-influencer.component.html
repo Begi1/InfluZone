@@ -1,0 +1,90 @@
+<app-home-page-header [showAuth]="false"></app-home-page-header>
+<div class="cont">
+    <div class="before__background">
+        <div class="back" routerLink="/get-start">
+            <img class="back__arrow" src="../../../assets/arrow_left_alt.png" alt="">
+            <h1 class="back__text">Back</h1>
+        </div>
+        <div class="before">
+            <div *ngIf="currentCard === 0" class="before__card0">
+                <h1 class="before__card0__title">Turn your skills into income!</h1>
+                <div class="before__card0__iconText">
+                    <img src="../../../assets/identity_platform.svg" alt="">
+                    <p>Answer questions and build your profile</p>
+                </div>
+                <div class="before__card0__iconText">
+                    <img src="../../../assets/apartment.svg" alt="">
+                    <p>Find a business or company you like, learn about them</p>
+                </div>
+                <div class="before__card0__iconText">
+                    <img src="../../../assets/business_messages.svg" alt="">
+                    <p>Talk to customers and get projects</p>
+                </div>
+                <div class="before__card0__iconText">
+                    <img src="../../../assets/assignment_turned_in.svg" alt="">
+                    <p>Finish your projects and watch your earnings roll in!</p>
+                </div>
+                <div class="before__card__paging">
+                    <div class="before__card__paging__dotGreen"></div>
+                    <div class="before__card__paging__dotGray"></div>
+                    <div class="before__card__paging__dotGray"></div>
+                </div>
+                <button class="before__btnGreen" (click)="showCard(1)">Sign up</button>
+            </div>
+        
+            <div *ngIf="currentCard === 1" class="before__card1">
+                <img class="before__card1__img" src="../../../assets/influencer.png" alt="">
+                <h1 class="before__card1__title">Liam Carter</h1>
+                <div class="customers_card__social">
+                    <div>
+                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
+                    </div>
+                    <div>
+                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
+                    </div>
+                    <div>
+                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
+                    </div>
+                </div>
+                <div class="before__card1__text">
+                    <p>This platform has made it so much easier to connect with brands that align with my content. It’s simple, efficient, and ensures smooth collaborations. Highly recommend it.</p>
+                    <p><span class="before__card1__subs">Subscribers:</span> 450,000</p>
+                </div>
+                <div class="before__card__paging">
+                    <div class="before__card__paging__dotGray"></div>
+                    <div class="before__card__paging__dotGreen"></div>
+                    <div class="before__card__paging__dotGray"></div>
+                </div>
+                <button class="before__btnGreen" (click)="showCard(2)">Next</button>
+                <button class="before__btnWhite" (click)="showCard(0)">Back</button>
+            </div>
+        
+            <div *ngIf="currentCard === 2" class="before__card1">
+                <img class="before__card1__img" src="../../../assets/influencer.png" alt="">
+                <h1 class="before__card1__title">Liam Carter</h1>
+                <div class="customers_card__social">
+                    <div>
+                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
+                    </div>
+                    <div>
+                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
+                    </div>
+                    <div>
+                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
+                    </div>
+                </div>
+                <div class="before__card1__text">
+                    <p>This platform has made finding brand partnerships so much easier. It connects me with the right businesses, making collaborations simple and hassle-free.</p>
+                    <p><span class="before__card1__subs">Followers:</span> 23,000</p>
+                </div>
+                <div class="before__card__paging">
+                    <div class="before__card__paging__dotGray"></div>
+                    <div class="before__card__paging__dotGray"></div>
+                    <div class="before__card__paging__dotGreen"></div>
+                </div>
+                <button class="before__btnGreen" routerLink="/signup-influencer">Next</button>
+                <button class="before__btnWhite" (click)="showCard(1)">Back</button>
+            </div>
+        </div>        
+    </div>
+</div>
