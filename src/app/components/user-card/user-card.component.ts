@@ -10,4 +10,9 @@ export class UserCardComponent {
   @Input() isHeaderVisible: boolean = true; 
   @Input() headerRoute:string = ''
   @Input() buttonRoute:string = ''
+  @Input() users: any = [];
+
+  // ngOnChanges() {
+  //   console.log('Updated users:', this.users);
+  // }  
 }

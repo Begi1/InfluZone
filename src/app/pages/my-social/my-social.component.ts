@@ -7,7 +7,7 @@ import { GoogleAuthService } from '../../services/google-auth.service';
   styleUrl: './my-social.component.scss'
 })
 export class MySocialComponent {
-activeCard: number = 0;
+  activeCard: number = 0;
 
   // Method to resize cards when clicked
   socialLinks: string[] = [];

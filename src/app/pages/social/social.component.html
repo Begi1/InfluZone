@@ -50,7 +50,7 @@
     
     <div class="social__info">
         <div>
-            <h1 class="social__info__title">Social media platforms</h1>
+            <h1 class="social__info__title">Social media platform: {{activeCard}}</h1>
             
             <!-- Check if socialLinks is empty -->
             <ul *ngIf="socialLinks.length > 0; else noLinks" class="social__info__links">
@@ -63,7 +63,7 @@
             <p>No social media links available.</p>
             </ng-template>
         
-            <p (click)="signIn()" class="social__info__add">+ Add more</p>
+            <p (click)="signIn()" class="social__info__add">Verify your {{activeCard}} account</p>
         </div>        
         <div class="social__content">
             <h1 class="social__info__title">Content</h1>

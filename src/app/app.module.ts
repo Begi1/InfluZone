@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageHeaderComponent } from './components/home-page-header/home-page-header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { UserHeaderComponent } from './components/user-header/user-header.component';
-import { ProfileComponent } from './pages/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PartnersComponent } from './components/partners/partners.component';
 import { CustomersCategoryComponent } from './components/customers-category/customers-category.component';
@@ -36,6 +36,8 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { FuckComponent } from './components/fuck/fuck.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { MySocialComponent } from './pages/my-social/my-social.component';
+import { AfterSignupProfileCustumerComponent } from './pages/after-signup-profile-custumer/after-signup-profile-custumer.component';
+import { AfterSignupProfileInfluencerComponent } from './pages/after-signup-profile-influencer/after-signup-profile-influencer.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,6 @@ import { MySocialComponent } from './pages/my-social/my-social.component';
     HomePageHeaderComponent,
     HomeComponent,
     UserHeaderComponent,
-    ProfileComponent,
     PartnersComponent,
     CustomersCategoryComponent,
     InfluencersCategoryComponent,
@@ -71,13 +72,16 @@ import { MySocialComponent } from './pages/my-social/my-social.component';
     FuckComponent,
     MyProfileComponent,
     MySocialComponent,
+    AfterSignupProfileCustumerComponent,
+    AfterSignupProfileInfluencerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

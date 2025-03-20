@@ -4,104 +4,23 @@
             <h1 class="customers__header__title">{{title}}</h1>
             <div class="customers__header__seeAll" [routerLink]="headerRoute">
                 <h2 class="customers__headerr__seeAll__text">See all</h2>
-                <img class="customers__headerr__seeAll__icon" src="../../../assets/keyboard_return.png" alt="icon">
+                <mat-icon class="customers__headerr__seeAll__icon">keyboard_return</mat-icon>
             </div>
         </div>
 
         <div class="customers__cards">
-            <div class="customers__card">
-                <img class="customers__card__image" src="../../../assets/customer_example.png" alt="">
-                <h1 class="customers__card__title">K&H</h1>
-                <p class="customers__card__description">Personalized fitness solutions with top equipment to help you reach your potential.</p>
+            <div *ngFor="let user of users" class="customers__card">
+                <img class="customers__card__image" [src]="user.socialMedia[0].image" alt="">
+                <h1 class="customers__card__title">{{user.socialMedia[0].username}}</h1>
+                <p class="customers__card__description">
+                    {{ user.socialMedia[0].about | slice:0:20 }}{{ user.socialMedia[0].about.length > 20 ? '...' : '' }}
+                </p>                  
                 <div class="customers_card__social">
-                    <div>
-                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
-                    </div>
-                </div>
-                <button class="customers_card__button" [routerLink]="buttonRoute">Read more</button>
-            </div>
-            <div class="customers__card">
-                <img class="customers__card__image" src="../../../assets/customer_example.png" alt="">
-                <h1 class="customers__card__title">K&H</h1>
-                <p class="customers__card__description">Personalized fitness solutions with top equipment to help you reach your potential.</p>
-                <div class="customers_card__social">
-                    <div>
-                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
-                    </div>
-                </div>
-                <button class="customers_card__button" [routerLink]="buttonRoute">Read more</button>
-            </div>
-            <div class="customers__card">
-                <img class="customers__card__image" src="../../../assets/customer_example.png" alt="">
-                <h1 class="customers__card__title">K&H</h1>
-                <p class="customers__card__description">Personalized fitness solutions with top equipment to help you reach your potential.</p>
-                <div class="customers_card__social">
-                    <div>
-                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
-                    </div>
-                </div>
-                <button class="customers_card__button" [routerLink]="buttonRoute">Read more</button>
-            </div>
-            <div class="customers__card">
-                <img class="customers__card__image" src="../../../assets/customer_example.png" alt="">
-                <h1 class="customers__card__title">K&H</h1>
-                <p class="customers__card__description">Personalized fitness solutions with top equipment to help you reach your potential.</p>
-                <div class="customers_card__social">
-                    <div>
-                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
-                    </div>
-                </div>
-                <button class="customers_card__button" [routerLink]="buttonRoute">Read more</button>
-            </div>
-            <div class="customers__card">
-                <img class="customers__card__image" src="../../../assets/customer_example.png" alt="">
-                <h1 class="customers__card__title">K&H</h1>
-                <p class="customers__card__description">Personalized fitness solutions with top equipment to help you reach your potential.</p>
-                <div class="customers_card__social">
-                    <div>
-                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
-                    </div>
-                </div>
-                <button class="customers_card__button" [routerLink]="buttonRoute">Read more</button>
-            </div>
-            <div class="customers__card">
-                <img class="customers__card__image" src="../../../assets/customer_example.png" alt="">
-                <h1 class="customers__card__title">K&H</h1>
-                <p class="customers__card__description">Personalized fitness solutions with top equipment to help you reach your potential.</p>
-                <div class="customers_card__social">
-                    <div>
-                        <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                    </div>
+                    <a [href]="'https://www.youtube.com/' + user.socialMedia[0].url" target="_blank">
+                        <div>
+                            <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
+                        </div>
+                    </a>
                     <div>
                         <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
                     </div>

@@ -5,8 +5,8 @@
             <li *ngFor="let faq of faqs; let i = index">
                 <div (click)="toggleAnswer(i)">
                     <h1>{{ faq.question }}</h1>
-                    <img *ngIf="!faq.isOpen" src="../../../assets/arrow_forward_ios.png" alt="">
-                    <img *ngIf="faq.isOpen" src="../../../assets/arrow_forward_ios_down.png" alt="">
+                    <mat-icon *ngIf="!faq.isOpen">keyboard_arrow_right</mat-icon>
+                    <mat-icon *ngIf="faq.isOpen">keyboard_arrow_down</mat-icon>
                 </div>
                 <!-- Show the answer only if 'isOpen' is true for this FAQ -->
                 <p *ngIf="faq.isOpen">{{ faq.answer }}</p>

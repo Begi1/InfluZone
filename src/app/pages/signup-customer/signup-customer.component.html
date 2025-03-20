@@ -1,39 +1,72 @@
 <app-home-page-header [showAuth]="false"></app-home-page-header>
 <div class="cont">
-    <div class="signin">
-      <!-- Signup Form -->
-      <div class="signin__card" *ngIf="currentCard === 'signup'">
-        <h1 class="signin__card__title">Create your account</h1>
-        <form>
-          <input class="signin__card__input" type="text" placeholder="Name of your company">
-          <input class="signin__card__input" type="text" placeholder="Email">
-          <input class="signin__card__input" type="password" placeholder="Password">
-          <input class="signin__card__input" type="password" placeholder="Confirm password">
-          <div class="signin__card__checkbox">
-            <input class="signin__card__checkbox__input" type="checkbox">
-            <p class="signin__card__checkbox__text">I agree to terms and conditions</p>
-          </div>
-          <button class="signin__card__signup__button" type="button" (click)="goToCard('verification')">Sign up</button>
-          <button class="signin__card__cancel__button" type="button" routerLink="/get-start">Cancel</button>
-        </form>
-      </div>
-    
-      <!-- Verification Card -->
-      <div class="signin__card signin__card1" *ngIf="currentCard === 'verification'">
-        <h1 class="signin__card__title">A verification code has been sent to your mail n***gmail.com</h1>
-        <form>
-          <input class="signin__card__input" type="text" placeholder="Enter verification code">
-          <button class="signin__card__signup__button" type="button" (click)="goToCard('success')">Verify and Sign up</button>
-          <button class="signin__card__cancel__button" type="button" (click)="goToCard('signup')">Cancel</button>
-        </form>
-      </div>
-    
-      <!-- Success Card -->
-      <div class="signin__card signin__card2" *ngIf="currentCard === 'success'">
-        <img class="signin__card__success" src="../../../assets/check.png" alt="check">
-        <h1 class="signin__card__title">Congratulations!!!<br/> You have successfully created your profile</h1>
-        <button class="signin__card__signup__button" type="button" routerLink="/profile">Next</button>
-      </div>
+  <div class="signin">
+    <!-- Signup Form -->
+    <div class="signin__card" *ngIf="currentCard === 'signup'">
+      <h1 class="signin__card__title">Create your account</h1>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <!-- Name -->
+        <input formControlName="name" class="signin__card__input" type="text" placeholder="Company Name" required>
+        <div *ngIf="name?.invalid && name?.touched" class="error-text">
+          <small *ngIf="name?.hasError('required')">Company name is required.</small>
+        </div>
+
+        <!-- Email -->
+        <input formControlName="email" class="signin__card__input" type="email" placeholder="Email" required>
+        <div *ngIf="email?.invalid && email?.touched" class="error-text">
+          <small *ngIf="email?.hasError('required')">Email is required.</small>
+          <small *ngIf="email?.hasError('email')">Email is Invalid.</small>
+        </div>
+
+        <!-- Password -->
+        <input formControlName="password" class="signin__card__input" type="password" placeholder="Password" required>
+        <div *ngIf="password?.invalid && password?.touched" class="error-text">
+          <small *ngIf="password?.hasError('required')">Password is required.</small>
+          <small *ngIf="password?.hasError('minlength')">Password must be at least 6 characters long.</small>
+          <small *ngIf="password?.hasError('passwordComplexity')">
+            Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.
+          </small>
+        </div>
+
+        <!-- Confirm Password -->
+        <input formControlName="confirmPassword" class="signin__card__input" type="password" placeholder="Confirm Password" required>
+        <div *ngIf="confirmPassword?.invalid && confirmPassword?.touched" class="error-text">
+          <small *ngIf="confirmPassword?.hasError('required')">Confirm Password is required.</small>
+        </div>
+        <div *ngIf="signupForm.hasError('passwordMismatch') && confirmPassword?.touched" class="error-text">
+          <small>Passwords do not match.</small>
+        </div>
+
+        <!-- Terms -->
+        <div class="signin__card__checkbox">
+          <input class="signin__card__checkbox__input" formControlName="termsAccepted" type="checkbox" required>
+          <p class="signin__card__checkbox__text">I agree to terms and conditions</p>
+        </div>
+        <div *ngIf="termsAcceptedField?.invalid && termsAcceptedField?.touched" class="error-text">
+          <small>You must agree to the terms and conditions to register.</small>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="signin__card__signup__button" type="submit">Sign Up</button>
+        <button class="signin__card__cancel__button" type="button" routerLink="/get-start">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Verification Card -->
+    <div class="signin__card signin__card1" *ngIf="currentCard === 'verification'">
+      <h1 class="signin__card__title">A verification code has been sent to your mail n***gmail.com</h1>
+      <form (ngSubmit)="verifyOtp()">
+        <input [(ngModel)]="otp" name="otp" class="signin__card__input" type="text" placeholder="Enter verification code" required>
+        <button class="signin__card__signup__button" type="submit">Verify and Sign up</button>
+        <button class="signin__card__cancel__button" type="button" (click)="goToCard('signup')">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Success Card -->
+    <div class="signin__card signin__card2" *ngIf="currentCard === 'success'">
+      <img class="signin__card__success" src="../../../assets/check.png" alt="check">
+      <h1 class="signin__card__title">Congratulations! You have successfully created your profile</h1>
+      <button class="signin__card__signup__button" type="button" (click)="onNextClick()">Next</button>
     </div>
   </div>
-  
+</div>

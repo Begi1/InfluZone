@@ -11,11 +11,11 @@
                 <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
                 <h1 class="influencers__card__title">Youtube</h1>
             </div>
-            <div class="influencers__card" style="background: #212120;" routerLink="/app-influencers-category-page">
+            <div class="influencers__card" style="background: #212120;" >
                 <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
                 <h1 class="influencers__card__title">Tik Tok</h1>
             </div>
-            <div class="influencers__card" style="background: #D142C0;" routerLink="/app-influencers-category-page">
+            <div class="influencers__card" style="background: #D142C0;" >
                 <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
                 <h1 class="influencers__card__title">Instagram</h1>
             </div>
@@ -29,7 +29,7 @@
         </div>
         <button class="search__button">Submit</button>
     </div>
-
+    <app-user-card [title]="'Influencers'" [isHeaderVisible]="false" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'" [users]="influencers"></app-user-card>
 </div>
 <app-user-card [title]="'Customers'" [isHeaderVisible]="false" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'"></app-user-card>
 <app-footer></app-footer>

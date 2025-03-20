@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ProfileComponent } from './pages/profile/profile.component';
 import { CustomersCategoryPageComponent } from './pages/customers-category-page/customers-category-page.component';
 import { InfluencersCategoryPageComponent } from './pages/influencers-category-page/influencers-category-page.component';
 import { InfluencersPageComponent } from './pages/influencers-page/influencers-page.component';
@@ -21,11 +20,12 @@ import { SignupCustomerComponent } from './pages/signup-customer/signup-customer
 import { FaqComponent } from './pages/faq/faq.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { MySocialComponent } from './pages/my-social/my-social.component';
+import { AfterSignupProfileInfluencerComponent } from './pages/after-signup-profile-influencer/after-signup-profile-influencer.component';
+import { AfterSignupProfileCustumerComponent } from './pages/after-signup-profile-custumer/after-signup-profile-custumer.component';
 
 const routes: Routes = [
   {path: '', component: WelcomePageComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'profile', component: ProfileComponent},
   {path: 'signup-influencer', component: SignupInfluencerComponent},
   {path: 'signup-customer', component: SignupCustomerComponent},
   {path: 'signin', component: SigninComponent},
@@ -46,6 +46,8 @@ const routes: Routes = [
   {path: 'f.a.q', component: FaqComponent},
   {path: 'my-profile', component: MyProfileComponent},
   {path: 'my-social', component: MySocialComponent},
+  {path: 'after-signup-influencer', component: AfterSignupProfileInfluencerComponent},
+  {path: 'after-signup-custumer', component: AfterSignupProfileCustumerComponent},
 ];
 
 const routerOptions: ExtraOptions = {

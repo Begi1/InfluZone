@@ -1,0 +1,34 @@
+<app-user-header></app-user-header>
+<div class="cont">
+  <div class="profile">
+    <div class="profile__title">
+      <div class="profile__title__left" routerLink="/home">
+        <img src="../../../assets/arrow_left_alt.png" alt="">
+        <h1 class="profile__title__text">Share your profile</h1>
+      </div>
+      <div class="profile__title__right">
+        <div class="profile__title__right__progress">
+          <h1>Almost there</h1>
+          <h2>75%</h2>
+        </div>
+        <div class="profile__title__right__greenline"></div>
+        <div class="profile__title__right__grayline"></div>
+      </div>
+    </div>
+    <div class="profile__inputs">
+      <h1 class="profile__inputs__title">Name</h1>
+      <input class="profile__inputs__input" type="text" [placeholder]="influencer?.name || 'Enter your name'" />
+      <h1 class="profile__inputs__title">Surname</h1>
+      <input class="profile__inputs__input" type="text" [placeholder]="influencer?.lastname || 'Enter your surname'" />
+      <h1 class="profile__inputs__title">Date of birth</h1>
+      <input class="profile__inputs__date" type="date" [placeholder]="influencer?.dateOfBirth || 'Select your birth date'" />
+      <h1 class="profile__inputs__title">About me</h1>
+      <textarea class="profile__inputs__textarea" [placeholder]="influencer?.about || 'Tell us about yourself'"></textarea>
+    </div>
+    <div class="profile__btns">
+      <button class="profile__btns__cancel" routerLink="/home">Cancel</button>
+      <button class="profile__btns__next" routerLink="/social">Next</button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
