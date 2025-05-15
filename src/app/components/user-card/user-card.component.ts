@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-card',
@@ -6,13 +7,30 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./user-card.component.scss']
 })
 export class UserCardComponent {
-  @Input() title:string = '';
+  @Input() title: string = '';
   @Input() isHeaderVisible: boolean = true; 
-  @Input() headerRoute:string = ''
-  @Input() buttonRoute:string = ''
+  @Input() headerRoute: string = '';
+  @Input() buttonRoute: string = '';
   @Input() users: any = [];
 
-  // ngOnChanges() {
-  //   console.log('Updated users:', this.users);
-  // }  
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    console.log(this.users);
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['users']) {
+      this.users = this.users.filter((user: any) => user.socialVerify === 'true');
+      console.log('Filtered users:', this.users);
+    }
+  }
+
+  route(user: any) {
+    const fullRoute = `${this.buttonRoute}/${user.name}${user.lastname}`;
+    this.router.navigate([fullRoute], {
+      queryParams: { email: user.email }
+    });
+  }
+  
 }

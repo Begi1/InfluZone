@@ -2,20 +2,44 @@
     <div class="customers">
         <div class="customers__header">
             <h1 class="customers__header__title">Customers - Category</h1>
-            <div class="customers__header__seeAll" routerLink="/customers-page">
+            <div class="customers__header__seeAll" routerLink="/customers-category-page">
                 <h2 class="customers__headerr__seeAll__text">See all</h2>
                 <mat-icon class="customers__headerr__seeAll__icon">keyboard_return</mat-icon>
             </div>
         </div>
         <div class="customers__cards">
-            <div class="customers__card" routerLink="/app-customers-category-page">
-                <img class="customers__card__icon" src="../../../assets/Fitness.png" alt="">
-                <h1 class="customers__card__title">Fitness</h1>
-                <div class="customers__cards__users">
+            <div class="customers__card" (click)="navigateToCategory('FashionBrands')">
+                <img class="customers__card__icon" src="../../../assets/categories/FashionBrands.png" alt="">
+                <h1 class="customers__card__title">Fashion Brands</h1>
+                <!-- <div class="customers__cards__users">
                     <img class="customers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
                     <h1 class="customers__cards__users__count">1268</h1>
-                </div>
-            </div>          
+                </div> -->
+            </div>
+            <div class="customers__card" (click)="navigateToCategory('Fitness')">
+                <img class="customers__card__icon" src="../../../assets/categories/Fitness.png" alt="">
+                <h1 class="customers__card__title">Fitness</h1>
+                <!-- <div class="customers__cards__users">
+                    <img class="customers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <h1 class="customers__cards__users__count">1268</h1>
+                </div> -->
+            </div>
+            <div class="customers__card" (click)="navigateToCategory('Travel')">
+                <img class="customers__card__icon" src="../../../assets/categories/Travel.png" alt="">
+                <h1 class="customers__card__title">Travel</h1>
+                <!-- <div class="customers__cards__users">
+                    <img class="customers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <h1 class="customers__cards__users__count">1268</h1>
+                </div> -->
+            </div>
+            <div class="customers__card" (click)="navigateToCategory('Food')">
+                <img class="customers__card__icon" src="../../../assets/categories/Food.png" alt="">
+                <h1 class="customers__card__title">Food</h1>
+                <!-- <div class="customers__cards__users">
+                    <img class="customers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
+                    <h1 class="customers__cards__users__count">1268</h1>
+                </div> -->
+            </div>
         </div>
     </div>
 </div>

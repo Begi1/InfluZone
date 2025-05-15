@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfluencerService } from '../../services/influencer.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-influencer-page',
@@ -7,14 +8,31 @@ import { InfluencerService } from '../../services/influencer.service';
   styleUrl: './influencer-page.component.scss'
 })
 export class InfluencerPageComponent {
-influencers: any[] = [];
+  activeCard: number = 0;
+  userEmail: string = '';
+  influencers: any[] = [];
+  user: any;
   loading: boolean = false;
   
-    constructor(private influencerService: InfluencerService) {}
+    constructor(private influencerService: InfluencerService, private route: ActivatedRoute) {}
   
     ngOnInit(): void {
-      // Call the function to get influencers when the component initializes
+
+      this.route.queryParams.subscribe(params => {
+        this.userEmail = params['email'];
+        console.log('User email:', this.userEmail);
+      });
+
       this.getInfluencersData();
+
+      this.influencerService.getInfluencerByEmail(this.userEmail).subscribe({
+        next: (data) => {
+          this.user = data
+        },
+        error: (err) => {
+          console.error('Error fetching influencer:', err);
+        }
+      });
     }
   
     // Define the function that gets the last 6 influencers
@@ -31,5 +49,9 @@ influencers: any[] = [];
           this.loading = false; // Set loading to false on error
         }
       );
+    }
+  
+    resizeCard(index: number): void {
+      this.activeCard = index;
     }
 }

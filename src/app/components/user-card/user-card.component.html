@@ -1,35 +1,47 @@
 <div class="cont">
     <div class="customers">
-        <div *ngIf="isHeaderVisible" class="customers__header">
-            <h1 class="customers__header__title">{{title}}</h1>
-            <div class="customers__header__seeAll" [routerLink]="headerRoute">
-                <h2 class="customers__headerr__seeAll__text">See all</h2>
-                <mat-icon class="customers__headerr__seeAll__icon">keyboard_return</mat-icon>
-            </div>
+      <div *ngIf="isHeaderVisible" class="customers__header">
+        <h1 class="customers__header__title">{{ title }}</h1>
+        <div class="customers__header__seeAll" [routerLink]="headerRoute">
+          <h2 class="customers__headerr__seeAll__text">See all</h2>
+          <mat-icon class="customers__headerr__seeAll__icon">keyboard_return</mat-icon>
         </div>
-
-        <div class="customers__cards">
-            <div *ngFor="let user of users" class="customers__card">
-                <img class="customers__card__image" [src]="user.socialMedia[0].image" alt="">
-                <h1 class="customers__card__title">{{user.socialMedia[0].username}}</h1>
-                <p class="customers__card__description">
-                    {{ user.socialMedia[0].about | slice:0:20 }}{{ user.socialMedia[0].about.length > 20 ? '...' : '' }}
-                </p>                  
-                <div class="customers_card__social">
-                    <a [href]="'https://www.youtube.com/' + user.socialMedia[0].url" target="_blank">
-                        <div>
-                            <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
-                        </div>
-                    </a>
-                    <div>
-                        <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
-                    </div>
-                    <div>
-                        <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
-                    </div>
+      </div>
+  
+      <div class="customers__cards">
+        <div *ngFor="let user of users">
+          <!-- Only render if socialMedia exists and has at least one item -->
+          <div *ngIf="user.socialMedia && user.socialMedia.length > 0" class="customers__card">
+            <img 
+              class="customers__card__image" 
+              [src]="user.mainImage" 
+              alt="User Image">
+  
+            <h1 class="customers__card__title">
+              {{ user.name }} {{user.lastname}}
+            </h1>
+  
+            <div class="customers_card__social">
+              <a 
+                *ngIf="user.socialMedia[0].url" 
+                [href]="'https://www.youtube.com/' + user.socialMedia[0].url" 
+                target="_blank">
+                <div>
+                  <img src="../../../assets/youtubeIcon.png" alt="youtubeIcon">
                 </div>
-                <button class="customers_card__button" [routerLink]="buttonRoute">Read more</button>
+              </a>
+              <div>
+                <img src="../../../assets/instagramIcon.png" alt="instagramIcon">
+              </div>
+              <div>
+                <img src="../../../assets/tiktokIcon.png" alt="tiktokIcon">
+              </div>
             </div>
+  
+            <button class="customers_card__button" (click)="route(user)">Read more</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  

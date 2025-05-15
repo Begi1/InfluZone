@@ -11,9 +11,11 @@
             gap: 10px;
     
             .header__icon {
-                width: 50px;
-                height: 50px;
+                height: auto;
+                width: auto;
                 cursor: pointer;
+                color: #118279;
+                font-size: 32px;
             }
     
             .header__title {
@@ -30,55 +32,38 @@
         .categories {
             margin-top: 60px;
             width: 1200px;
-            height: 358px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
     
             .categories__category {
-                width: 100%;
-                height: 100%;
+                margin-top: 40px;
+                width: 260px;
+                height: 61px;
                 border-radius: 10px;
-                background: #DC849C;
+                background: #118279;
                 display: flex;
-                flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
                 cursor: pointer;
     
                 img {
                     width: auto;
-                    height: 240px;
+                    height: 100%;
                 }
     
                 h1 {
+                    margin-left: 20px;
                     color: #FFF;
                     text-align: center;
-                    font-size: 40px;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: normal;
-                    letter-spacing: 1.2px;
+                    letter-spacing: 1px;
                 }
-    
-                .categories__category__users {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 4px;
-                    .categories__category__users__icon {
-                        height: 46px;
-                        width: 46px;
-                    }
-        
-                    .categories__category__users__num {
-                        color: #FFF;
-                        text-align: center;
-                        font-size: 30px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        letter-spacing: 0.9px;
-                    }
-                }
-    
             }
         }
         
@@ -140,6 +125,7 @@
 
 @media only screen and (max-width: 1200px) { 
     .cont {
+        overflow-x: hidden;
         margin-top: 60px;
         flex-direction: column;
     
@@ -149,11 +135,13 @@
             justify-content: flex-start;
             align-items: center;
             gap: 10px;
-    
+
             .header__icon {
-                width: 50px;
-                height: 50px;
+                height: auto;
+                width: auto;
                 cursor: pointer;
+                color: #118279;
+                font-size: 32px;
             }
     
             .header__title {
@@ -170,56 +158,40 @@
         .categories {
             margin-top: 60px;
             width: 600px;
-            height: 358px;
+            height: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
     
             .categories__category {
-                width: 100%;
-                height: 100%;
+                width: 260px;
+                height: 61px;
                 border-radius: 10px;
-                background: #DC849C;
+                background: #118279;
                 display: flex;
-                flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
                 cursor: pointer;
     
                 img {
                     width: auto;
-                    height: 240px;
+                    height: 100%;
                 }
     
                 h1 {
+                    margin-left: 20px;
                     color: #FFF;
                     text-align: center;
-                    font-size: 40px;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: normal;
-                    letter-spacing: 1.2px;
+                    letter-spacing: 1px;
                 }
-    
-                .categories__category__users {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 4px;
-                    .categories__category__users__icon {
-                        height: 46px;
-                        width: 46px;
-                    }
-        
-                    .categories__category__users__num {
-                        color: #FFF;
-                        text-align: center;
-                        font-size: 30px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        letter-spacing: 0.9px;
-                    }
-                }
-    
             }
+
         }
         
         .search {
@@ -234,7 +206,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 600px;
+                width: 1000px;
                 height: 60px;
                 border-radius: 10px;
                 border: 0.7px solid #118279;
@@ -280,7 +252,8 @@
 
 @media only screen and (max-width: 600px) { 
     .cont {
-        margin-top: 60px;
+        overflow-x: hidden;
+        margin-top: 30px;
         flex-direction: column;
     
         .header {
@@ -291,14 +264,16 @@
             gap: 10px;
     
             .header__icon {
-                width: 32px;
                 height: auto;
+                width: auto;
                 cursor: pointer;
+                color: #118279;
+                font-size: 32px;
             }
     
             .header__title {
                 color: #118279;
-                font-size: 22px;
+                font-size: 32px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -310,58 +285,38 @@
         .categories {
             margin-top: 30px;
             width: 300px;
-            height: 280px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
     
             .categories__category {
-                width: 100%;
-                height: 100%;
+                width: 260px;
+                height: 61px;
                 border-radius: 10px;
-                background: #DC849C;
+                background: #118279;
                 display: flex;
-                flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
                 cursor: pointer;
     
                 img {
                     width: auto;
-                    height: 140px;
+                    height: 100%;
                 }
     
                 h1 {
-                    margin-top: 40px;
                     color: #FFF;
                     text-align: center;
-                    font-size: 22px;
+                    font-size: 16px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: normal;
-                    letter-spacing: 1.2px;
+                    letter-spacing: 1px;
                 }
-    
-                .categories__category__users {
-                    margin-top: 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 4px;
-                    .categories__category__users__icon {
-                        height: 32px;
-                        width: auto;
-                    }
-        
-                    .categories__category__users__num {
-                        color: #FFF;
-                        text-align: center;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        letter-spacing: 0.9px;
-                    }
-                }
-    
             }
+
         }
         
         .search {
@@ -376,7 +331,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 300px;
+                width: 220px;
                 height: 40px;
                 border-radius: 10px;
                 border: 0.7px solid #118279;
@@ -409,7 +364,7 @@
                 border-radius: 10px;
                 background: #118279;
                 color: #FFF;
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 200;
                 line-height: normal;
@@ -419,4 +374,3 @@
         }
     }
 }
-

@@ -15,19 +15,19 @@
             <ul>
                 <li routerLink="/my-profile">
                     <h1>My profile</h1>
-                    <img src="../../../assets/profile.svg" alt="">
+                    <mat-icon style="color: #000000; font-weight: normal;">person</mat-icon>
                 </li>
                 <li>
                     <h1 routerLink="/my-social">My Social</h1>
-                    <img src="../../../assets/social.svg" alt="">
+                    <mat-icon>rss_feed</mat-icon>
                 </li>
                 <li routerLink="/f.a.q">
                     <h1>F.A.Q</h1>
-                    <img src="../../../assets/faq.svg" alt="">
+                    <mat-icon>help</mat-icon>
                 </li>
-                <li routerLink="">
+                <li (click)='deleteAccessToken()' routerLink="">
                     <h1>Sign out</h1>
-                    <img src="../../../assets/signout.svg" alt="">
+                    <mat-icon>logout</mat-icon>
                 </li>
             </ul>
         </div>

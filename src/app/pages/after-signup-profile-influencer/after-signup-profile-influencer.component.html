@@ -1,4 +1,4 @@
-<app-user-header></app-user-header>
+<app-home-page-header [showAuth]="false"></app-home-page-header>
 <div class="cont">
     <div class="influencers">
         <div class="influencers__cards">
@@ -41,28 +41,17 @@
               </div>
 
               <div class="social__info__profile">
-                <img class="social__info__profile__img" [src]="userChannelData.snippet.thumbnails.default.url" alt="">
+                <img class="social__info__profile__img" [src]="userChannelData?.snippet?.thumbnails?.default?.url" alt="">
                 <div class="social__info__profile__text">
-                  <h1 class="social__info__profile__text__nickname">{{userChannelData.snippet.title}}</h1>
+                  <h1 class="social__info__profile__text__nickname">{{userChannelData?.snippet?.title}}</h1>
                   <div class="social__info__profile__text__group">
-                    <h1 class="social__info__profile__text__group__url">{{userChannelData.snippet.customUrl}} • </h1>
-                    <h2 class="social__info__profile__text__group__subscribers">{{userChannelData.statistics.subscriberCount}} subscriber • </h2>
-                    <h2 class="social__info__profile__text__group__videos">{{userChannelData.statistics.videoCount}} video</h2>
+                    <h1 class="social__info__profile__text__group__url">{{userChannelData?.snippet?.customUrl}} • </h1>
+                    <h2 class="social__info__profile__text__group__subscribers">{{userChannelData?.statistics?.subscriberCount}} subscriber • </h2>
+                    <h2 class="social__info__profile__text__group__videos">{{userChannelData?.statistics?.videoCount}} video</h2>
                   </div>
-                  <p class="social__info__profile__text__description">{{userChannelData.snippet.description}}</p>
+                  <p class="social__info__profile__text__description">{{userChannelData?.snippet?.description}}</p>
                 </div>
               </div>
-              <!-- Check if socialLinks is empty -->
-              <!-- <ul *ngIf="socialLinks.length > 0; else noLinks" class="social__info__links">
-                  <li *ngFor="let link of socialLinks" class="social__info__links__link">
-                      <a [href]="link" target="_blank">{{ link }}</a>
-                  </li>
-              </ul> -->
-                
-              <!-- <ng-template #noLinks>
-              <p>No social media links available.</p>
-              </ng-template> -->
-          
           </div>        
           <div class="social__content">
               <h1 class="social__info__title">Content</h1>
@@ -94,18 +83,14 @@
                   <button (click)="removeVideo(i)">Remove</button> <!-- Remove button -->
                 </li>
               </ul>
-          </div>                 
-          <div class="social__info__services">
-              <div class="social__info__services__header">
-                <h1 class="social__info__services__header__title">Your services</h1>
-                <h2 class="social__info__services__header__add">+ Add</h2>
-              </div>
-              <p class="social__info__services__content">You don’t have any services</p>
-          </div>
-        </div>
-        <div class="btns">
-          <button class="btns__white">Cancel</button>
-          <button class="btns__green" (click)="updateProfile()">Save</button>
+          </div>    
+          <div>
+            <h1>Image</h1>
+            <div style="display: flex; gap: 20px;">
+              <input type="checkbox">
+              <p>Use profile picture from this social platform as main image</p>
+            </div>
+          </div>             
         </div>
       </div>
       <div class="tiktok" *ngIf="activeCard === 1">
@@ -113,6 +98,35 @@
       </div>
       <div class="tiktok" *ngIf="activeCard === 2">
         <h1>Comming soon ...</h1>
+      </div>
+      <!-- <div class="social__info__services">
+        <div class="social__info__services__header">
+          <h1 class="social__info__services__header__title">Your services</h1>
+        </div>
+        <div class="social__info__services__group">
+          <div class="social__info__services__group__first">
+              <h1>Lower-Tier Service</h1>
+              <p>Best for small business</p>
+              <input type="text">
+              <p>Key Features:</p>
+          </div>
+          <div class="social__info__services__group__second">
+            <h1>Medium-Tier Service</h1>
+            <p>Best for mid-sized business</p>
+            <input type="text">
+            <p>Key Features:</p>
+          </div>
+          <div class="social__info__services__group__third">
+            <h1>Premium Service</h1>
+            <p>Best for large companies</p>
+            <input type="text">
+            <p>Key Features:</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="btns">
+        <!-- <button class="btns__white">Cancel</button> -->
+        <button class="btns__green" (click)="updateProfile()">Verify</button>
       </div>
 </div>
 <app-footer></app-footer>

@@ -1,7 +1,20 @@
-<app-user-header></app-user-header>
-<app-customers-category></app-customers-category>
-<app-user-card [title]="'Customers'" [isHeaderVisible]="true" [headerRoute]="'/customers-page'" [buttonRoute]="'/customer-page'"></app-user-card>
-<app-influencers-category></app-influencers-category>
-<app-user-card [title]="'Influencers'" [isHeaderVisible]="true" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'" [users]="influencers"></app-user-card>
-<!-- <app-partners></app-partners> -->
+<!-- Content for 'user' role -->
+<div *ngIf="role === 'user'">
+  <app-user-header></app-user-header>
+  <app-customers-category></app-customers-category>
+  <app-user-card [title]="'Customers'" [isHeaderVisible]="true" [headerRoute]="'/customers-page'" [buttonRoute]="'/customer-page'"></app-user-card>
+  <app-influencers-category></app-influencers-category>
+  <app-user-card [title]="'Influencers'" [isHeaderVisible]="true" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'" [users]="influencers"></app-user-card>
+  <!-- <app-partners></app-partners> -->
+</div>
+
+<!-- Content for 'company' role -->
+<div *ngIf="role === 'company'">
+    <app-user-header></app-user-header>
+  <app-influencers-category></app-influencers-category>
+  <app-user-card [title]="'Influencers'" [isHeaderVisible]="true" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'" [users]="influencers"></app-user-card>
+  <app-customers-category></app-customers-category>
+  <app-user-card [title]="'Customers'" [isHeaderVisible]="true" [headerRoute]="'/customers-page'" [buttonRoute]="'/customer-page'"></app-user-card>
+</div>
+
 <app-footer></app-footer>

@@ -34,11 +34,12 @@ export class InfluencersPageComponent {
 
   getInfluencersData(): void {
     this.loading = true; // Set loading to true when starting the request
-    this.influencerService.getLast6Influencers().subscribe(
+    this.influencerService.getInfluencers().subscribe(
       (data) => {
         this.influencers = data;
         this.loading = false; // Set loading to false when data is fetched
-        console.log(data)
+        // console.log(data)
+        console.log(this.influencers)
       },
       (error) => {
         console.error('Error fetching influencers:', error);

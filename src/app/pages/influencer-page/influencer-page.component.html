@@ -1,35 +1,57 @@
-<app-home-page-header></app-home-page-header>
-<app-customer-page-about></app-customer-page-about>
+<app-user-header></app-user-header>
+<!-- <app-customer-page-about></app-customer-page-about> -->
 <div class="cont">
     <div class="influencers">
-        <div class="influencers__cards">
-            <div class="influencers__card">
-                <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
-                <h1 class="influencers__card__title">Youtube</h1>
-                <div class="influencers__cards__users">
-                    <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                    <h1 class="influencers__cards__users__count">1268</h1>
-                </div>
+        <div class="customerPageAbout">
+            <div class="customerPageAbout__header">
+                <img routerLink="/home" src="../../../assets/arrow_left_alt.png" alt="">
+                <h1 routerLink="/home">Back</h1>
             </div>
-            <div class="influencers__card" style="background: #212120;">
-                <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
-                <h1 class="influencers__card__title">Tik Tok</h1>
-                <div class="influencers__cards__users">
-                    <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                    <h1 class="influencers__cards__users__count">3358</h1>
-                </div>
-            </div>
-            <div class="influencers__card" style="background: #D142C0;">
-                <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
-                <h1 class="influencers__card__title">Instagram</h1>
-                <div class="influencers__cards__users">
-                    <img class="influencers__cards__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                    <h1 class="influencers__cards__users__count">6478</h1>
+            <div class="customerPageAbout__about">
+                <img [src]="user?.mainImage" alt="logo">
+                <h1 class="customerPageAbout__about__title">{{user?.name}} {{user?.lastname}}</h1>
+                <div class="youtube" *ngIf="activeCard === 0">
+                    <h1 style="width: 600px; word-wrap: break-word; white-space: normal;">{{user.socialMedia[0].about}}</h1>
+                    <div>
+                        <h1></h1>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="influencers__cards">
+            <!-- First card -->
+            <div 
+              class="influencers__card" 
+              (click)="resizeCard(0)" 
+              [ngClass]="{'active': activeCard === 0}">
+              <img class="influencers__card__icon" src="../../../assets/youtube.png" alt="">
+              <h1 class="influencers__card__title">Youtube</h1>
+            </div>
+        
+            <!-- Second card -->
+            <div 
+              class="influencers__card" 
+              (click)="resizeCard(1)" 
+              [ngClass]="{'active': activeCard === 1}" 
+              style="background: #212120;">
+              <img class="influencers__card__icon" src="../../../assets/tiktok.png" alt="">
+              <h1 class="influencers__card__title">Tik Tok</h1>
+            </div>
+        
+            <!-- Third card -->
+            <div 
+              class="influencers__card" 
+              (click)="resizeCard(2)" 
+              [ngClass]="{'active': activeCard === 2}" 
+              style="background: #D142C0;">
+              <img class="influencers__card__icon" src="../../../assets/instagram.png" alt="">
+              <h1 class="influencers__card__title">Instagram</h1>
+            </div>
+        </div>
+        </div>
     </div>
-</div>
+
 
 <app-user-card [title]="'Other Influencers'" [isHeaderVisible]="true" [headerRoute]="'/influencers-page'" [buttonRoute]="'/influencer-page'" [users]="influencers"></app-user-card>
 <app-footer></app-footer>

@@ -4,14 +4,14 @@
       <div class="profile__title">
         <div class="profile__title__left" routerLink="/home">
           <img  src="../../../assets/arrow_left_alt.png" alt="">
-          <h1 class="profile__title__text">My profile</h1>
+          <h1 class="profile__title__text">Home</h1>
         </div>
         <div class="profile__title__left" routerLink="/my-social">
-          <h1 class="profile__title__text">Next</h1>
+          <h1 class="profile__title__text">My-Social</h1>
           <img  src="../../../assets/arrow_left_alt.svg" alt="">
         </div>
       </div>
-      <div class="profile__inputs">
+      <!-- <div class="profile__inputs">
         <h1 class="profile__inputs__title">Full name</h1>
         <input class="profile__inputs__input" type="text" name="" id="">
         <h1 class="profile__inputs__title">Email</h1>
@@ -24,7 +24,23 @@
       <div class="profile__btns">
         <button class="profile__btns__cancel" routerLink="/home">Cancel</button>
         <button class="profile__btns__next" routerLink="/my-social">Next</button>
-      </div>
+      </div> -->
+      <div class="profile__inputs">
+        <h1 class="profile__inputs__title">Name</h1>
+        <p>{{ userData?.name }}</p>
+      
+        <h1 class="profile__inputs__title">Surname</h1>
+        <p>{{ userData?.lastname }}</p>
+      
+        <h1 class="profile__inputs__title">Email</h1>
+        <p>{{ userData?.email }}</p>
+      
+        <h1 class="profile__inputs__title">Date of birth</h1>
+        <p>{{ userData?.date }}</p>
+
+        <h1 class="profile__inputs__title">Date of creation</h1>
+        <p>{{ userData?.dateOfCreation | date: 'fullDate' }}</p>
+      </div>      
     </div>
   </div>
 <app-footer></app-footer>

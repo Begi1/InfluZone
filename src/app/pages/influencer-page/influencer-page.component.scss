@@ -25,11 +25,124 @@
             cursor: pointer;
         }
     }
+    
 
     .influencers {
         margin-top: 20px;
         width: 1200px;
         height: 100%;
+
+        .customerPageAbout {
+            width: 1200px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        
+            .customerPageAbout__header {
+                width: 1200px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                cursor: pointer;
+                
+                h1 {
+                    color: #118279;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+            }
+        
+            .customerPageAbout__about {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+        
+        
+                img {
+                    width: 190px;
+                    height: 190px;
+                    border-radius: 100%;
+                }
+        
+                .customerPageAbout__about__title {
+                    margin-top: 32px;
+                    margin-bottom: 35px;
+                    color: #000;
+                    text-align: justify;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                }
+        
+                .customerPageAbout__about__button {
+                    margin-top: 34px;
+                    width: 353px;
+                    height: 58px;
+                    border-radius: 10px;
+                    background: #118279;
+                    box-shadow: 9px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                    border: none;
+                    cursor: pointer;
+                }
+        
+                .customerPageAbout_about__social {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 42px;
+                        width: 42px;
+                        background: #118279;
+                        border-radius: 100%;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    
+                    img {
+                        height: 22px;
+                        width: 22px;
+                    }
+                }
+        
+                .customerPageAbout__about__description {
+                    margin-top: 35px;
+                    width: 1070px;
+                    height: 100%;
+                    flex-shrink: 0;
+                    color: #000;
+                    text-align: justify;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                    text-align: center;
+                }
+            }
+            
+            
+        
+        }
     
         .influencers__header {
             display: flex;
@@ -74,65 +187,49 @@
         }
     
         .influencers__cards {
+            width: 100%;
+            height: 300px;
             margin-top: 35px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 55px;
+          
             .influencers__card {
-                width: 370px;
+              width: 360px;  // Default smaller size for all cards
+              height: 200px;
+              border-radius: 10px;
+              background: #F35151;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          
+              &.active {
+                width: 370px;  // Active card size
                 height: 250px;
-                border-radius: 10px;
-                background: #F35151;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
-    
-                .influencers__card__icon {
-    
-                }
-    
-                .influencers__card__title {
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                    color: #FFF;
-                    text-align: center;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    letter-spacing: 1.2px;
-                }
-    
-                .influencers__cards__users {
-                    display: flex;
-                    align-items: center;
-                    gap: 4px;
-    
-                    .influencers__cards__users__icon {
-                        width: 35px;
-                        height: 35px;
-                    }
-    
-                    .influencers__cards__users__count {
-                        color: #FFF;
-                        text-align: center;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 300;
-                        line-height: normal;
-                        letter-spacing: 0.8px;
-                        text-decoration-line: underline;
-                        text-decoration-style: solid;
-                        text-decoration-skip-ink: none;
-                        text-decoration-thickness: auto;
-                        text-underline-offset: auto;
-                        text-underline-position: from-font;
-                    }
-                }
+                background: #F35151;  // You can modify this to keep the active card color if necessary
+              }
+          
+              .influencers__card__icon {
+                // Style for icon (if any)
+              }
+          
+              .influencers__card__title {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                color: #FFF;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.2px;
+              }
             }
         }
+    
     }
     
     .search {

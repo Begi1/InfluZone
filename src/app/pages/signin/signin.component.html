@@ -1,20 +1,35 @@
 <app-home-page-header [showAuth]="false"></app-home-page-header>
 <div class="cont">
-    <div class="getStart">
-        <div class="getStart__card">
-            <img class="getStart__card__img" src="../../../assets/logo.png" alt="">
-            <h1 class="getStart__card__title">Welcome Back!</h1>
-            <p class="getStart__card__text">We’re glad to see you again! Please sign in to access your account.</p>
-            <div class="d-flex">
-                <form class="getStart__card__sign">
-                    <input class="getStart__card__sign__input" style="margin-bottom: 30px;" type="text" placeholder="Email or username">
-                    <input class="getStart__card__sign__input" type="text" placeholder="Password">
-                    <label class="getStart__card__sign__forgot">Forgot password?</label>
-                    <button class="getStart__card__sign__btn" routerLink="/home">Sign in</button>
-                </form>
-            </div>
-            <h1 class="getStart__card__acount">Don’t have an account?</h1>
-            <button class="getStart__card__signin" routerLink="/get-start">Sign up</button>
-        </div>
+  <div class="getStart">
+    <div class="getStart__card">
+      <img class="getStart__card__img" src="../../../assets/logo.png" alt="">
+      <h1 class="getStart__card__title">Welcome Back!</h1>
+      <p class="getStart__card__text">We’re glad to see you again! Please sign in to access your account.</p>
+      <div class="d-flex">
+        <form class="getStart__card__sign" (ngSubmit)="onSubmit()">
+          <input
+            class="getStart__card__sign__input"
+            style="margin-bottom: 30px;"
+            type="text"
+            placeholder="Email or username"
+            [(ngModel)]="email"   
+            name="email"           
+            required
+          />
+          <input
+            class="getStart__card__sign__input"
+            type="password"
+            placeholder="Password"
+            [(ngModel)]="password"  
+            name="password"        
+            required
+          />
+          <label class="getStart__card__sign__forgot">Forgot password?</label>
+          <button class="getStart__card__sign__btn" type="submit">Sign in</button>
+        </form>
+      </div>
+      <h1 class="getStart__card__acount">Don’t have an account?</h1>
+      <button class="getStart__card__signin" routerLink="/get-start">Sign up</button>
     </div>
+  </div>
 </div>

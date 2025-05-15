@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { GoogleAuthService } from '../../services/google-auth.service';
 import { InfluencerService } from '../../services/influencer.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-after-signup-profile-influencer',
@@ -9,6 +10,8 @@ import { InfluencerService } from '../../services/influencer.service';
 })
 export class AfterSignupProfileInfluencerComponent {
   activeCard: number = 0;
+
+  servicesModal = false
 
   // Method to resize cards when clicked
   socialLinks: string[] = [];
@@ -60,7 +63,7 @@ export class AfterSignupProfileInfluencerComponent {
   newVideo: string = '';          // To store the input value
   videos: string[] = [];  
 
-  constructor(private googleAuthService: GoogleAuthService, private cdRef: ChangeDetectorRef, private influencerService: InfluencerService) { }
+  constructor(private googleAuthService: GoogleAuthService, private cdRef: ChangeDetectorRef, private influencerService: InfluencerService, private router: Router) { }
 
   ngOnInit(): void {
     // Subscribe to authentication state and channel data
@@ -130,6 +133,7 @@ export class AfterSignupProfileInfluencerComponent {
     }
   
     const payload = {
+      mainImage: this.userChannelData.snippet.thumbnails.default.url,
       socialMedia: [
         {
           title: 'YouTube',
@@ -151,7 +155,12 @@ export class AfterSignupProfileInfluencerComponent {
         console.error('Error updating influencer profile:', error);
       }
     );
+
+    this.router.navigate(['/home']);
   }
   
+  showServicesModal() {
+    this.servicesModal = !this.servicesModal
+  }
   
 }

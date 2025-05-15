@@ -14,24 +14,27 @@ interface LoginResponse {
 })
 export class InfluencerService {
 
-  private apiUrl = 'http://localhost:3000/influencers'; // Replace with your backend URL
+  //local
+  private apiUrl = 'http://localhost:3000/';
+  //prod
+  // private apiUrl = 'https://api.influzone.ge/influencers';
 
   constructor(private http: HttpClient) { }
 
   // Create influencer
   createInfluencer(data: any): Observable<any> {
-    return this.http.post(this.apiUrl, data);
+    return this.http.post(`${this.apiUrl}influencers`, data);
   }
 
   // Verify OTP
   verifyOtp(email: string, otp: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/verify-otp`, { email, otp });
+    return this.http.post(`${this.apiUrl}influencers/verify-otp`, { email, otp });
   }
 
   // Login to get JWT token
   login(data: { email: string; password: string }): Observable<LoginResponse> {
     console.log(data);
-    return this.http.post<LoginResponse>(`${this.apiUrl}/login`, data).pipe(
+    return this.http.post<LoginResponse>(`${this.apiUrl}auth/login`, data).pipe(
       tap(response => {
         const accessToken = response?.accessToken;
         if (accessToken) {
@@ -62,7 +65,7 @@ export class InfluencerService {
     const decodedToken = this.decodeJwt();
     if (decodedToken && decodedToken.email) {
       const email = decodedToken.email;
-      return this.http.get(`${this.apiUrl}/${email}`); // Send GET request to find influencer by email
+      return this.http.get(`${this.apiUrl}influencers/${email}`); // Send GET request to find influencer by email
     } else {
       throw new Error('No email found in the decoded JWT token');
     }
@@ -73,18 +76,26 @@ export class InfluencerService {
     const decodedToken = this.decodeJwt();
     if (decodedToken && decodedToken.email) {
       const email = decodedToken.email;
-      return this.http.patch(`${this.apiUrl}/update-profile/${email}`, data);
+      return this.http.patch(`${this.apiUrl}influencers/update-profile/${email}`, data);
     } else {
       throw new Error('No email found in the decoded JWT token');
     }
   }
 
   getLast6Influencers(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl + "/latest");
+    return this.http.get<any[]>(this.apiUrl + "influencers/latest");
+  }
+
+  getInfluencers(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl + "influencers");
   }
 
   getInfluencersByPage(page: number): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl + "/forpages");
+    return this.http.get<any[]>(this.apiUrl + "influencers/forpages");
+  }
+
+  getInfluencerByEmail(email: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}influencers/${email}`);
   }
 
 }

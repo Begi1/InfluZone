@@ -1,30 +1,24 @@
 <app-user-header></app-user-header>
-
 <div class="cont">
-    <div class="header" routerLink="/customers-page">
-        <img class="header__icon" src="../../../assets/arrow_left_alt.png" alt="">
-        <h1 class="header__title">Customers - Fitness</h1>
+    <div class="header" routerLink="/home">
+        <mat-icon class="header__icon">west</mat-icon>
+        <h1 class="header__title">Categories</h1>
     </div>
 
     <div class="categories">
-        <div class="categories__category" routerLink="/app-customers-category-page">
-            <img src="../../../assets/Fitness.png" alt="">
-            <h1>Fitness</h1>
-            <div class="categories__category__users">
-                <img class="categories__category__users__icon" src="../../../assets/supervisor_account.png" alt="">
-                <p class="categories__category__users__num">1268</p>
-            </div>
+        <div *ngFor="let category of categories" class="categories__category" (click)="navigateToCategory(category.navigate)">
+            <img [src]="category.img" alt="">
+            <h1>{{category.title}}</h1>
         </div>
     </div>
-
-    <div class="search">
+    
+    <!-- <div class="search">
         <div class="search__input">
             <img class="search__input__icon" src="../../../assets/search.png" alt="">
             <input class="search__input__input" type="text" placeholder="Search">
         </div>
         <button class="search__button">Submit</button>
-    </div>
+    </div> -->
 </div>
-
-<app-user-card [title]="'Customers'" [isHeaderVisible]="false" [buttonRoute]="'/customer-page'"></app-user-card>
+<!-- <app-user-card [title]="'Customers'" [isHeaderVisible]="false" [buttonRoute]="'/customer-page'"></app-user-card> -->
 <app-footer></app-footer>
