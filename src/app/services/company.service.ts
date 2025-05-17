@@ -11,7 +11,7 @@ interface LoginResponse {
 })
 export class CompanyService {
 
-  private apiUrl = 'http://localhost:3000/companies'; // Adjust the URL according to your backend
+  private apiUrl = 'https://api.influzone.ge/companies'; // Adjust the URL according to your backend
 
   constructor(private http: HttpClient) { }
 

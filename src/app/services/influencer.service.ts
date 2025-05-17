@@ -15,7 +15,7 @@ interface LoginResponse {
 export class InfluencerService {
 
   //local
-  private apiUrl = 'http://localhost:3000/';
+  private apiUrl = 'https://api.influzone.ge/';
   //prod
   // private apiUrl = 'https://api.influzone.ge/influencers';
 
